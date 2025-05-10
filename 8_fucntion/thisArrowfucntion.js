@@ -28,14 +28,14 @@
 const obj = {
   name: 'Rohit',
   greet: function() {
-    console.log("greet this:", this); // ✅ obj
+    console.log("greet this:", this); //  obj
 
     setTimeout(() => {
-      console.log("setTimeout this:", this); // ✅ obj
+      console.log("setTimeout this:", this); //  obj
 
       const inner = () => {
-        console.log("inner this:", this); // ✅ obj
-        console.log("inner name:", this.name); // ✅ Rohit
+        console.log("inner this:", this); //  obj
+        console.log("inner name:", this.name); //  Rohit
       }
 
       inner();
