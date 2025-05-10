@@ -1,37 +1,38 @@
-const p=new Promise((resolve,reject)=>{
-    resolve("Promise resolved value");
-})
+// const p=new Promise((resolve,reject)=>{
+//     resolve("Promise resolved value");
+// })
 
 // let suppose my promise takes time to resolve
 const p2=new Promise((resolve,reject)=>{
     setTimeout(()=>{
         resolve("Promise resolved value after 5 sec");
-    },5000)
+    },10000)
 })
 
 const p3=new Promise((resolve,reject)=>{
     setTimeout(()=>{
         resolve("Promise resolved value after 10 sec");
-    },10000)
+    },20000)
 })
 
 
 
 
 // with normal fucntion 
-function getData(){
-   p.then((res)=>console.log(res))
-   p2.then((data)=>console.log(data))
-   console.log("i am printing at first or last lets check it out ");
-}
-getData();
+// function getData(){
+//    p.then((res)=>console.log(res))
+//    p2.then((data)=>console.log(data))
+//    console.log("i am printing at first or last lets check it out ");
+// }
+// getData();
 
 
 
 // now we will chek out with async await over here
 async function handlePromise(){
-  const res=await p;
-  console.log(res)
+//   const res=await p;
+//   console.log(res)
+  console.log("hello world")
 
   const res2=await p2; 
   console.log("is here also it is printing first ");
