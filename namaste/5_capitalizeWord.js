@@ -1,5 +1,6 @@
 function capitalizeWords(sentence) {
     return sentence
+        .toString()
         .trim()
         .split(/\s+/)
         .map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
@@ -10,4 +11,4 @@ function capitalizeWords(sentence) {
 console.log(capitalizeWords("hello world"))
 console.log(capitalizeWords("javaScript is FUN")) 
 console.log(capitalizeWords("    multiple spaces   "))
-console.log(capitalizeWords(" "))
+console.log(capitalizeWords(1234555))

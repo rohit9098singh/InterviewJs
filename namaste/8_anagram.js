@@ -1,10 +1,18 @@
 function isAnagram(str1,str2){
-    if(str1.length !==str2.length){
+    // Clean both strings: remove non-letters and make lowercase
+    const cleanStr1 = str1.replace(/[^a-z]/gi, '').toLowerCase();
+    const cleanStr2 = str2.replace(/[^a-z]/gi, '').toLowerCase();
+
+    // Check length after cleaning
+    if (cleanStr1.length !== cleanStr2.length) {
         return false;
     }
-    const firstSortedString=str1.split("").sort().join();
-    const secondSortedString=str2.split("").sort().join();
-    return firstSortedString === secondSortedString;
+
+    // Sort and compare
+    const sortedOne = cleanStr1.split("").sort().join("");
+    const sortedTwo = cleanStr2.split("").sort().join("");
+
+    return sortedOne === sortedTwo;
 }
 
 console.log(isAnagram("listen","hhahaj"))
