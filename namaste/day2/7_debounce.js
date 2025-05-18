@@ -10,3 +10,4 @@ function debounce(cb,delay){
 
 const debounceLog=debounce(console.log,300);
 console.log(debounceLog("hi"))
+
