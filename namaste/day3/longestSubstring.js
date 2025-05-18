@@ -4,7 +4,7 @@ function longestUniqueSubstring(s){
         let seen=[];
         for (let j=i;j<s.length;j++){
             if(seen.includes(s[j])){
-
+               break;
             }
             else{
                 seen.push(s[j]);
