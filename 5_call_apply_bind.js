@@ -32,3 +32,5 @@ let printMyName=printfullName.bind(name2,"mumbai") // it resturn a method which 
 
 console.log(printMyName)
 printMyName();
+
+

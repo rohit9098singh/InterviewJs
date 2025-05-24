@@ -1,6 +1,6 @@
-const sayHello=function (){
-    console.log("hello")
-}
+// const sayHello=function (){
+//     console.log("hello")
+// }
 
 
 function greet(cb){
@@ -12,3 +12,7 @@ function cb(){
 }
 
 greet(cb);
+
+
+
+
