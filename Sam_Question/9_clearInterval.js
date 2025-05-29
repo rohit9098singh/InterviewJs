@@ -1,12 +1,10 @@
-let i = 0;
+let count =0;
 
-const timer = setInterval(() => {
-  console.log("Hello", ++i);
-
-  if (i === 3) {
-    clearInterval(timer); // Stop after 3 times
-    console.log("Stopped!");
-  }
+const intervalId=setInterval(() => {
+    console.log(count++);
+    if(count>5){
+      clearInterval(intervalId);}
+    
 }, 1000);
 
 
