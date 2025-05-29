@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #grandparent {
+        padding: 40px;
+        background-color: lightcoral;
+      }
+
+      #parent {
+        padding: 30px;
+        background-color: lightsalmon;
+      }
+
+      #child {
+        padding: 20px;
+        background-color: lightgreen;
+        cursor: pointer;
+      }
+
+      div {
+        border: 2px solid black;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="grandparent">
+      Grandparent
+      <div id="parent">
+        Parent
+        <div id="child">Child (Click me)</div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

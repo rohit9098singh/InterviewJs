@@ -12,13 +12,11 @@ const doSomeMagic = function(fn, delay) {
         clearTimeout(timer);
         timer = setTimeout(() => {
             fn.apply(context, args);
-            fn()
         }, delay);
     };
 }
 
 const betterFunction = doSomeMagic(getData, 300);
-
 
 
 // let count = 0;
