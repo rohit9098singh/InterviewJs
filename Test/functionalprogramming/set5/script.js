@@ -188,29 +188,30 @@ console.log(uniqueString(string));
 
 // Given an array of objects representing employees, where each object has a name property, a department property, and a salary property, write a function that returns an object representing the total salary of each department. The keys of the object should be the department names, and the values should be the total salaries of all employees in that department.
 
+const employees = [
+  { name: "Alice", department: "Engineering", salary: 70000 },
+  { name: "Bob", department: "Engineering", salary: 80000 },
+  { name: "Charlie", department: "HR", salary: 50000 },
+  { name: "David", department: "Sales", salary: 60000 },
+  { name: "Eve", department: "Sales", salary: 55000 },
+  { name: "Frank", department: "HR", salary: 52000 },
+  { name: "Grace", department: "Engineering", salary: 75000 },
+  { name: "Heidi", department: "Marketing", salary: 58000 },
+  { name: "Ivan", department: "Marketing", salary: 61000 },
+  { name: "Judy", department: "Sales", salary: 63000 }
+];
 
+const newFunction=(arr)=>{
+  return  arr.reduce((acc,curr)=>{
+         if(acc[curr.department]){
+           return  acc = acc + curr.salary;
+         }else{
+          return acc=curr.department;
+         }
+  },{})
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.log("hard function",newFunction(employees));
 
 // Given an array. Write a function that will return an array by adding role property in an existing object , For ex: if the person has marks then you need to add role as key and student as value into it, otherwise, role will be key and the value will be an employee
 
@@ -247,7 +248,7 @@ const greetEmployee=(arr)=>{
     ))
 }
 
-console.log(greetEmployee(lastEmployees))
+console.log(greetEmployee(lastEmployees));
 
 
 
@@ -257,7 +258,52 @@ console.log(greetEmployee(lastEmployees))
 
 
 
+// let a = 3;
+// let b = new Number(3);
+// let c = 3;
+// console.log(a == b); // t
+// console.log(a === b);// f
+// console.log(b === c);//f
+
+// async function foo() {
+//     console.log("A");  // 2nd
+//     await Promise.resolve();
+//     console.log("B");  // 4rd
+//     await new Promise(resolve => setTimeout(resolve, 0));
+//     console.log("C"); // 5th
+// }
+// console.log("D"); // 1st
+// foo();
+// console.log("E") // 3rd
+
+
+let a = true;
+setTimeout(() => {
+    a = false;
+}, 2000)
+while (a) {
+    console.log(' -- inside whilee -- '); 
+}
 
 
 
+// const nums = [1, 2, 3, 4, 5, 6, 7];
+// nums.forEach((n) => {
+//     if (n % 2 === 0) {
+//         break; 
+//     }
+//     console.log(n);
+// });
 
+function func() {
+    try {
+        console.log(1)
+        return
+    } catch (e) {
+        console.log(2)
+    } finally {
+        console.log(3)
+    }
+    console.log(4)
+}
+func()

@@ -55,3 +55,24 @@ const calculate = function(logicFunction, inputRadiiArray) {
 console.log("Areas:", calculate(calculateArea, radii));
 console.log("Circumferences:", calculate(calculateCircumference, radii));
 
+
+
+
+// Takes a function as argument
+function greet(callback) {
+  callback();
+}
+
+greet(() => console.log("Hello!"));
+
+// Returns a function
+function multiplier(x) {
+  return function(y) {
+    return x * y;
+  };
+}
+
+const double = multiplier(2);
+console.log(double(5)); // 10
+
+

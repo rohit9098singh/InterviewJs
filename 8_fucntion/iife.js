@@ -6,10 +6,6 @@
 //  it doesnt polutes the global scope just because evverthign is inside the fucntin itself it has no matter with the other varibles doesnt takes memeory after execution as garbage collector removes automatically once it work is done 
 // we cannot call it more then once in ouer code 
 
-
-
-
-
 const factorial=function fact(n){
     if(n<=1){
         return 1;

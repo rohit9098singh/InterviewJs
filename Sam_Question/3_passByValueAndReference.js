@@ -16,7 +16,7 @@ console.log("outside function",a);
 let person={name:'aman'};
 
 function changePerson(obj){
-   obj.name;
+   obj.name="bandar";
    console.log("changed name",obj.name)
 }
 

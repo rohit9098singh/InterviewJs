@@ -48,7 +48,7 @@
 
 // ========================== 5 =============================
 function outer(){
-    console.log(typeof inner);
+    console.log( inner());
     function inner(){
         return " i am inner"
     }
@@ -57,3 +57,5 @@ function outer(){
 outer();
 
 // output => inner 
+
+

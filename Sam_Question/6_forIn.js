@@ -25,3 +25,7 @@ for(let key in arr){
 for(let val of arr){
     console.log(val) // returns the value 1,2,3,4
 }
+
+
+
+
