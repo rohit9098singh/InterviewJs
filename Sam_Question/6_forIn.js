@@ -17,15 +17,30 @@
 
 // note: remeber the below problems 
 
-const arr=[1,2,3,4];
-for(let key in arr){
-    console.log(key) // returns the index 0,1,2
+// const arr=[1,2,3,4];
+// for(let key in arr){
+//     console.log(key) // returns the index 0,1,2
+// }
+
+// for(let val of arr){
+//     console.log(val) // returns the value 1,2,3,4
+// }
+
+
+const person={
+    name:"Rohit",
+    age:29,
+    address:'banglore'
 }
 
-for(let val of arr){
-    console.log(val) // returns the value 1,2,3,4
+for(let key in person){
+    console.log(`${key}`)
 }
 
+const arr=[1,2,3,4,5,6]
+for(let a in arr){
+    console.log("key:",a)
+}
 
 
 
