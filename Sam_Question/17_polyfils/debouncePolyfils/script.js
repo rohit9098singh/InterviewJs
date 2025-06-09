@@ -1,7 +1,7 @@
 let count = 0;
 
-const getData = () => {
-    console.log("fetching data...", count++);
+const getData = (hello) => {
+    console.log(`fetching data...${count++} form ${hello}`);
 }
 
 const doSomeMagic = function(fn, delay) {
@@ -17,6 +17,9 @@ const doSomeMagic = function(fn, delay) {
 }
 
 const betterFunction = doSomeMagic(getData, 300);
+betterFunction("rohit");
+betterFunction("ankit");
+betterFunction("sachin");
 
 
 // let count = 0;

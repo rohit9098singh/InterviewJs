@@ -27,7 +27,4 @@ child.addEventListener("click",()=>{
 
 //====================== Bubbling ko Rokna ho to? ========================
 
-document.getElementById("child").addEventListener("click", function (event) {
-  console.log("Child clicked");
-  event.stopPropagation(); 
-},false);
+// 

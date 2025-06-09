@@ -20,3 +20,13 @@ for (let [key,value] of Object.entries(obj)){
 }
 
 //Object.entries(obj) converts an object into an array of [key, value] pairs.
+
+const person={
+  name:"rohit",
+  age:28
+}
+
+for(let [key,value] of Object.entries(person) ){
+  console.log(key)
+  console.log("hello item value",value)
+}

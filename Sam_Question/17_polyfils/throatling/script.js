@@ -9,7 +9,7 @@ const throttle = (func, delay) => {
   let flag = true;
   return function () {
     let context = this;
-    args = arguments;
+    let args = arguments;  
     if (flag) {
       func.apply(context, args);
       flag = false;
@@ -20,9 +20,10 @@ const throttle = (func, delay) => {
   };
 };
 
-const betterFucntion = throttle(() => expensiveFunction("Rahul", "Delhi"), 300);
+const betterFunction = throttle(() => expensiveFunction("Rahul", "Delhi"), 300);
 
-window.addEventListener("resize", betterFucntion);
+window.addEventListener("resize", betterFunction);
+
 
 // flag initially true hota hai.
 
