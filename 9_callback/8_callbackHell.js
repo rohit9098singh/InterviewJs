@@ -1,3 +1,9 @@
+// Callback Hell is a situation in JavaScript where multiple
+//  nested callbacks make code hard to read, difficult to debug, and unmaintainable.
+
+// It usually happens when asynchronous operations are chained one after 
+// another using callbacks — resulting in a pyramid or Christmas tree-like structure
+
 function boilWater(callback) {
   setTimeout(() => {
     console.log("1. Water boiled");
@@ -33,6 +39,10 @@ boilWater(() => {
     });
   });
 });
+
+
+
+
 
 // Each step depends on the previous one, so we nest one callback inside another. It’s fine for 2–3 steps, but imagine 10 steps… it becomes a nightmare
 

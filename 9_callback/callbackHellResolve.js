@@ -67,4 +67,10 @@ boilWater()
   });
   
 
+val=async function(){
+  await boilWater();
+  await addMilk();
+  await serveTea();
+  
+}
 

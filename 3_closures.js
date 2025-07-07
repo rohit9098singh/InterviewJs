@@ -15,18 +15,18 @@
  
 
 
-// function x() {
-//     let a = 10;
-//     return {
-//         hello: function (amount) {
-//             return "hello world";  //  returning the string instead of logging it
-//         }
-//     }
-// }
+function x() {
+    let a = 10;
+    return {
+        hello: function (amount) {
+            return "hello world";  //  returning the string instead of logging it
+        }
+    }
+}
 
-// const yes = x();
-// console.log(yes.hello());  // prints: hello world
-// console.log(yes.a)  // undefined
+const yes = x();
+console.log(yes.hello());  // prints: hello world
+console.log(yes.a)  // undefined
 
 
 // ==============================  use this example to explain ===============================
@@ -48,38 +48,37 @@
 // reson is fucntion alsong with its lexical scope was returend
 
 
-
-function x(){
-    var a=7;
-    function y(){
-        console.log(a);
-    }
-    a=1000
-    return y;
-}
-
-var z=x();
-console.log(z)
-z() 
-
-
-// function z() {
-//     var b = 1000;
-
-//     function x() {
-//         var a = 7;
-
-//         function y() {
-//             console.log(a, b); // Accesses both a and b via closure
-//         }
-//         a=2000
-//        y();
+// function x(){
+//     var a=7;
+//     function y(){
+//         console.log(a);
 //     }
-
-//      x(); // Call x() and return y
-//      return 2
+//     a=1000
+//     return y;
 // }
-// z();
+
+// var z=x();
+// console.log(z)
+// z() 
+
+
+function z() {
+    var b = 1000;
+
+    function x() {
+        var a = 7;
+
+        function y() {
+            console.log(a, b); // Accesses both a and b via closure
+        }
+        a=2000
+       y();
+    }
+
+     x(); // Call x() and return y
+     return 2
+}
+z();
 
 // var c = z();    // c now holds function y
 // console.log(c); // Prints the function definition

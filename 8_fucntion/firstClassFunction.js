@@ -3,15 +3,17 @@
 // }
 
 
-// function greet(cb){
-//    cb();
-// }
+function greet(cb){
+   cb();
+}
 
-// function cb(){
-//     console.log("helo buddy")
-// }
+function cb(){
+    console.log("helo buddy")
+}
 
-// greet(cb);
+greet(cb);
+
+
 
 
 
