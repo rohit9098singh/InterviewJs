@@ -35,6 +35,7 @@ callMyPromise();
 const resolved = Promise.resolve(" Immediate resolve");
 const rejected = Promise.reject(" Immediate reject");
 
+
 resolved.then((res)=>console.log(res));
 rejected.catch((res)=>console.log(res));
 

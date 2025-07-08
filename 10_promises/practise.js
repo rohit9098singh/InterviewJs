@@ -10,7 +10,7 @@ handledOutput.then((orderId)=>{
 })
 
 function validateCart(){
-   return false;
+   return true;
 }
 function createOrder(cart){
     const promise=new Promise((resolve,reject)=>{ // your promise could be either resolved or be rejected 

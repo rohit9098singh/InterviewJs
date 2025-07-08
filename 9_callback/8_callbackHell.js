@@ -40,10 +40,6 @@ boilWater(() => {
   });
 });
 
-
-
-
-
 // Each step depends on the previous one, so we nest one callback inside another. It’s fine for 2–3 steps, but imagine 10 steps… it becomes a nightmare
 
 

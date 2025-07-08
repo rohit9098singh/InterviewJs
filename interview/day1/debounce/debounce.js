@@ -18,3 +18,4 @@ const doSomeMagic=(func,delay)=>{
 const betterFunction=doSomeMagic(getData,300);
 
 
+

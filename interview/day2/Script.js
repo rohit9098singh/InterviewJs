@@ -1,4 +1,4 @@
-class user{}
+const user={}
 console.log( typeof(user)) 
 
 function add(){

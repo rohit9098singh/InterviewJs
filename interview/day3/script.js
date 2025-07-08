@@ -3,12 +3,12 @@
 //   .then((num) => Promise.resolve(num * 2))
 //   .then(console.log);
 // ============================================
-// Promise.resolve()
-//   .then(() => {
-//     throw new Error("Boom");
-//   })
-//   .then(() => console.log("Next"))
-//   .catch((e) => console.log("Caught:", e.message));
+Promise.resolve()
+  .then(() => {
+    throw new Error("Boom");
+  })
+  .then(() => console.log("Next"))
+  .catch((e) => console.log("Caught:", e.message));
 //==============================================
 // let p = Promise.resolve("X");
 // p.then((val) => console.log("A:", val));

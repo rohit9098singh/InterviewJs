@@ -5,3 +5,9 @@
 
 let obj = { a: undefined };
 console.log(obj.hasOwnProperty("a"));
+
+
+
+
+
+

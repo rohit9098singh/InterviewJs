@@ -27,9 +27,6 @@ function processData(data) {
 
 // If result.error exists but is falsy (like an empty string "" or 0), your check:
 
-// js
-// Copy
-// Edit
 // if (result.error) {
 //   throw new Error(result.error);
 // }

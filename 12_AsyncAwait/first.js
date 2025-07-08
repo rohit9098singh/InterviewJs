@@ -4,13 +4,13 @@
 const p2=new Promise((resolve,reject)=>{
     setTimeout(()=>{
         resolve("Promise resolved value after 5 sec");
-    },5000)
+    },10000)
 })
 
 const p3=new Promise((resolve,reject)=>{
     setTimeout(()=>{
         resolve("Promise resolved value after 10 sec");
-    },10000)
+    },5000)
 })
 
 // now we will chek out with async await over here

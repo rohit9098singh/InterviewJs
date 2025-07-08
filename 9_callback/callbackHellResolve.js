@@ -57,7 +57,7 @@ function serveTea() {
   });
 }
 
-// 🔗 Chaining Promises
+// // 🔗 Chaining Promises
 boilWater()
   .then(() => addTeaLeaves())
   .then(() => addMilk())
@@ -67,10 +67,11 @@ boilWater()
   });
   
 
-val=async function(){
+const val=async function(){
   await boilWater();
   await addMilk();
   await serveTea();
   
 }
+val()
 

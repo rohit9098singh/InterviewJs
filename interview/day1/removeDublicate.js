@@ -12,6 +12,7 @@ const nextUnique=numbers.filter((value,index,self)=>{
     return self.indexOf(value)===index;
 })
 
+
 console.log(nextUnique);
 
 // without any fucntion
@@ -35,3 +36,6 @@ for(let i=0;i<num.length;i++){
 }
 
 console.log(unique);
+
+let num2=[1,2,3,4,5,6]
+
