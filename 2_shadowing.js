@@ -21,19 +21,19 @@
 
 
 
-// var a=5;
+var a=5;
 
-// function test(){
-//     console.log(a); // undefined
-//     var a=10;
-//     {
-//         let a=15;
-//         console.log(a); // 15 
-//     }
-//     console.log(a) // 10
-// }
+function test(){
+    console.log(a); // undefined
+    var a=10;
+    {
+        let a=15;
+        console.log(a); // 15 
+    }
+    console.log(a) // 10
+}
 
-// test();
+test();
 
 
 
@@ -82,3 +82,10 @@
 // const result = outer();
 // result();
 
+// greet()
+console.log(greet())
+const greet=function hello(){
+    console.log("hello")
+}
+
+greet()

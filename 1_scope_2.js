@@ -77,4 +77,5 @@ function outerFunc(){
 const fucn=outerFunc();
 fucn();
 
+
 // output => outer 

@@ -1,3 +1,40 @@
+// A closure is created when a function is defined inside another function, and the inner function remembers the variables from the outer function — even after the outer function has finished running.
+// This happens because JavaScript uses lexical scoping, which allows the inner function to "close over" or keep a reference to the outer function’s variables.
+// Since the inner function can still access those variables, they are not removed by the garbage collector.
+// This ability of remembering and using the outer function’s variables is what we call a closure.
+// Just like they remember the variables, inner functions can also access outer functions (if they're defined as variables or function declarations).
+
+// function outer() {
+//     function greet() {
+//         return "Hello";
+//     }
+
+//     function inner() {
+//         console.log(greet()); // Accessing outer function
+//     }
+
+//     return inner;
+// }
+
+// const sayHello = outer();
+// sayHello(); // Hello
+
+function outer() {
+    function greet() {
+        return "hello world ";
+    }
+    function inner() {
+        return "is it her " + greet();
+    }
+    return inner;
+}
+
+const ch = outer();
+console.log(ch()); 
+
+
+
+
 // function x(){
 //     let a =10;
 //     return {
@@ -15,18 +52,18 @@
  
 
 
-function x() {
-    let a = 10;
-    return {
-        hello: function (amount) {
-            return "hello world";  //  returning the string instead of logging it
-        }
-    }
-}
+// function x() {
+//     let a = 10;
+//     return {
+//         hello: function (amount) {
+//             return "hello world";  //  returning the string instead of logging it
+//         }
+//     }
+// }
 
-const yes = x();
-console.log(yes.hello());  // prints: hello world
-console.log(yes.a)  // undefined
+// const yes = x();
+// console.log(yes.hello());  // prints: hello world
+// console.log(yes.a)  // undefined
 
 
 // ==============================  use this example to explain ===============================
@@ -48,37 +85,37 @@ console.log(yes.a)  // undefined
 // reson is fucntion alsong with its lexical scope was returend
 
 
-// function x(){
-//     var a=7;
-//     function y(){
-//         console.log(a);
-//     }
-//     a=1000
-//     return y;
-// }
-
-// var z=x();
-// console.log(z)
-// z() 
-
-
-function z() {
-    var b = 1000;
-
-    function x() {
-        var a = 7;
-
-        function y() {
-            console.log(a, b); // Accesses both a and b via closure
-        }
-        a=2000
-       y();
+function x(){
+    var a=7;
+    function y(){
+        console.log(a);
     }
-
-     x(); // Call x() and return y
-     return 2
+    a=1000
+    return y;
 }
-z();
+
+var z=x();
+console.log(z)
+z() 
+
+
+// function z() {
+//     var b = 1000;
+
+//     function x() {
+//         var a = 7;
+
+//         function y() {
+//             console.log(a, b); // Accesses both a and b via closure
+//         }
+//         a=2000
+//        y();
+//     }
+
+//      x(); // Call x() and return y
+//      return 2
+// }
+// z();
 
 // var c = z();    // c now holds function y
 // console.log(c); // Prints the function definition

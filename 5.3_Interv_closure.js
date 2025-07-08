@@ -1,11 +1,11 @@
-// function x(){
-//     for(var i=1;i<=5;i++){
-//         setTimeout(()=>{
-//             console.log(i)
-//         },i*1000)
-//     }
-//     console.log("hello rohit")
-// }
+function x(){
+    for(var i=1;i<=5;i++){
+        setTimeout(()=>{
+            console.log(i)
+        },i*1000)
+    }
+    console.log("hello rohit")
+}
 
 // x(); // hello rohit 6 6 6 6 6 6 behave this way because closuere remeber the reference of i not the value of i 
 
