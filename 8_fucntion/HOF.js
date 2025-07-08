@@ -1,78 +1,34 @@
- {/**
-      const radius=[1,2,3,4];
+// A callback is a function that is passed as an argument to another function and is executed later, usually after some task or event.
+// 👉 Callback ka main purpose hota hai: "Hey, after you finish your job, call this function!"
 
-// calculated the radius 
-const calculateRadius= function(r){
-    const output=[];
-    for(let i=0;i<radius.length;i++){
-          output.push(Math.PI * r[i] *r[i])
-    }
+setTimeout(function () {
+  console.log("This is a callback");
+}, 1000);
 
-    return output;
+
+
+
+// A function is called a Higher-Order Function if it does either of the following:
+// Takes a function as an argument ✅
+// Returns a function ✅
+// 🔸 Doing even one of these is enough to be called a higher-order function.
+
+// 1st example when it return the fucntion
+function sayHello(){
+  return function bye(){
+    console.log("get lost")
+  }
 }
 
-// calculated the cicumference
+const innerFuncRef=sayHello();
 
-const calculateCircumference=function(r){
-   const output=[];
-   for (let i=0;i<radius.length;i++)[
-      output.push(Math.PI *2 * r[i])
-   ]
+innerFuncRef();
 
-   return output
+// 2nd when takes a fucntion as an arguent
+const arr = [1, 2, 3];
 
-}
+const newArr = arr.map(function (num) {
+  return num * 2;
+});
 
-console.log("radius of all side is ",calculateRadius(radius))
-console.log("circumference of all side ",calculateCircumference(radius)) 
-    
-*/}
-
-// ======================   the problem in the above code is that we are writing nearly the same code multiple times =====================
-
-let radii = [1, 2, 4, 5];
-
-// Function to calculate circumference for a single radius
-const calculateCircumference = function(singleRadius) {
-    return Math.PI * 2 * singleRadius;
-}
-
-// Function to calculate area for a single radius
-const calculateArea = function(singleRadius) {
-    return Math.PI * singleRadius * singleRadius;
-}
-
-// Higher-order function that takes logic and list of radii
-const calculate = function(logicFunction, inputRadiiArray) {
-    const result = [];
-    for (let index = 0; index < inputRadiiArray.length; index++) {
-        const currentRadius = inputRadiiArray[index];
-        result.push(logicFunction(currentRadius));
-    }
-    return result;
-}
-
-console.log("Areas:", calculate(calculateArea, radii));
-console.log("Circumferences:", calculate(calculateCircumference, radii));
-
-
-
-
-// Takes a function as argument
-function greet(callback) {
-  callback();
-}
-
-greet(() => console.log("Hello!"));
-
-// Returns a function
-function multiplier(x) {
-  return function(y) {
-    return x * y;
-  };
-}
-
-const double = multiplier(2);
-console.log(double(5)); // 10
-
-
+console.log(newArr); // [2, 4, 6]

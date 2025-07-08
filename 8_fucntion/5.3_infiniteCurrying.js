@@ -14,7 +14,3 @@ function infiniteCurrying(val1){
 console.log(infiniteCurrying(1)(2)(3)(4)(5)(6)(78)())
 
 
-const add2=function add(){
-    console.log("hello")
-}
-add2()
