@@ -1,10 +1,10 @@
-// setTimeout(() => console.log("fifth",1), 0);
-// console.log("first",2);
+// setTimeout(() => console.log("fifth"), 0);
+// console.log("first 1");
 // new Promise(res => {
-//  console.log("third",3)
+//  console.log("second")
 //  res();
-// }).then(() => console.log("fourth",4));
-// console.log("second",5);
+// }).then(() => console.log("fourth"));
+// console.log("third");
 
 // async function foo() {
 //  console.log("second","A");
@@ -68,6 +68,7 @@
 // console.log(a === b);
 // console.log(b === c);
 
+
 var x = 23;
 (function () {
   var x = 43;
@@ -77,3 +78,5 @@ var x = 23;
     var x = 21;
   })();
 })();
+ 
+console.log(undefined++)

@@ -10,3 +10,6 @@ function cb(value){
    return   value +2;
 }
 arr.MyForEach(cb)
+
+
+

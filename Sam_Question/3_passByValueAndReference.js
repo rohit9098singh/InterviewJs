@@ -1,14 +1,14 @@
 // // pass by value
 
-// let a=10;
+let a=10;
 
-// function changeValue(x){
-//     x=20;
-//     console.log("inside function",x)
-// }
+function changeValue(x){
+    x=20;
+    console.log("inside function",x)
+}
 
-// changeValue(a);
-// console.log("outside function",a);
+changeValue(a);
+console.log("outside function",a);
 
 
 // // changed by refernce

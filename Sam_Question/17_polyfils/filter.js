@@ -15,3 +15,6 @@ function cb(incomingArray){
 }
 
 console.log(arr.MyFilter(cb))
+
+
+

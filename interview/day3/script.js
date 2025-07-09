@@ -3,12 +3,12 @@
 //   .then((num) => Promise.resolve(num * 2))
 //   .then(console.log);
 // ============================================
-Promise.resolve()
-  .then(() => {
-    throw new Error("Boom");
-  })
-  .then(() => console.log("Next"))
-  .catch((e) => console.log("Caught:", e.message));
+// Promise.resolve()
+//   .then(() => {
+//     throw new Error("Boom");
+//   })
+//   .then(() => console.log("Next"))
+//   .catch((e) => console.log("Caught:", e.message));
 //==============================================
 // let p = Promise.resolve("X");
 // p.then((val) => console.log("A:", val));
@@ -69,11 +69,11 @@ Promise.resolve()
 //   .then(console.log);
 //============================================
 
-//   Promise.resolve(10)
-//   .then((res) => {
-//     res + 10;
-//   })
-//   .then((res) => console.log(res));
+  // Promise.resolve(10)
+  // .then((res) => {
+  //   res + 10;
+  // })
+  // .then((res) => console.log(res));
 
 //============================================
 // async function test() {

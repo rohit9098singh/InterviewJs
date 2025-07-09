@@ -11,9 +11,40 @@ function restOperator(firstObj,...restObject){
 }
 
 
+
 restOperator(
   { name: "rohit", age: 16 },
   { name: "abhishek", age: 12 },
   { city: "Delhi" },
   {language:"bangoli",name:"bhikari"}
 );
+
+
+//===================================================
+function test(a, ...rest) {
+  console.log(a, rest);
+}
+test(1, 2, 3, 4);
+
+// 1 [2, 3, 4]
+
+
+function test(a, ...rest) {
+  console.log(rest.length);
+}
+test(5);
+//0
+
+const obj = {
+  a: 1,
+  b: { x: 2, y: 3 },
+  c: 4
+};
+const { b, ...rest } = obj;
+console.log(rest);
+
+
+function test(...rest) {
+  let rest = [1, 2]; // ❌ SyntaxError
+}
+

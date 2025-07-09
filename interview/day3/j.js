@@ -1,19 +1,20 @@
-// var count = 1
-// const a = ()=>{
-//   console.log(++count)
-// }
+var count = 1
+const a = ()=>{
+  console.log(++count)
+}
 
-// const b = ()=>{
-//   let x = 5
-//   function name() {
-//     console.log("HEllo")
-//   }
-// }
+const b = ()=>{
+  let x = 5
+  function name() {
+    console.log("HEllo")
+  }
+  return name
+}
 
-// a();
-// a();
-// a();
-// b();
+a();
+a();
+a();
+b()();
 
 // if([]){
 //     console.log("Hello coder")

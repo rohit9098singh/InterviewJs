@@ -13,7 +13,7 @@
 
 const parent=document.getElementById("parent");
 
-parent.addEventListener("click",function(){
+parent.addEventListener("click",function(e){
     console.log("Parent Clicked")
 },false)
 

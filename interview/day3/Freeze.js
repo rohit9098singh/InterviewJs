@@ -16,14 +16,13 @@
 
 
 
-
-// function any(){
+function any(){
   
-//     c=1;
+    c=1;
   
-// }
-// any()
-// console.log(c)
+}
+any()
+console.log(c)
 
 // console.log(012)
 
@@ -50,19 +49,19 @@
 // const value=new abc();
 // console.log(value)
 
-let user={
-    name:"hello",
-    age:29
-}
+// let user={
+//     name:"hello",
+//     age:29
+// }
 
-const {name,age}=user;
-console.log(name,user)
+// const {name,age}=user;
+// console.log(name,user)
 
-// Step 1: Nayi key banake purani value assign karo
-user.username = user.name;
-// Step 2: Purani key hata do
-delete user.name;
-console.log(user);
+// // Step 1: Nayi key banake purani value assign karo
+// user.username = user.name;
+// // Step 2: Purani key hata do
+// delete user.name;
+// console.log(user);
 
 
 user["user-name"] = user.name;
@@ -120,7 +119,7 @@ console.log(user);
 //     }, 1000);
 //   };
 
-//  
+ 
 //   useEffect(() => {
 //     console.log("Updated count:", count);
 //   }, [count]); 
@@ -162,77 +161,77 @@ console.log(user);
 
 
 //=======================================================
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 
-export default function ExpenseTracker() {
-  const [expenseName, setExpenseName] = useState('');
-  const [cost, setCost] = useState('');
-  const [expenseDetails, setExpenseDetails] = useState([]);
+// export default function ExpenseTracker() {
+//   const [expenseName, setExpenseName] = useState('');
+//   const [cost, setCost] = useState('');
+//   const [expenseDetails, setExpenseDetails] = useState([]);
 
-  const onAddExpense = (e) => {
-    e.preventDefault();
+//   const onAddExpense = (e) => {
+//     e.preventDefault();
 
-    if (!expenseName || !cost) return;
+//     if (!expenseName || !cost) return;
 
-    const newExpense = {
-      name: expenseName,
-      cost: Number(cost),
-    };
+//     const newExpense = {
+//       name: expenseName,
+//       cost: Number(cost),
+//     };
 
-    setExpenseDetails([...expenseDetails, newExpense]);
-    setExpenseName('');
-    setCost('');
-  };
+//     setExpenseDetails([...expenseDetails, newExpense]);
+//     setExpenseName('');
+//     setCost('');
+//   };
 
-  // 🔢 Calculate total cost
-  const totalCost = expenseDetails.reduce((total, item) => total + item.cost, 0);
+//   // 🔢 Calculate total cost
+//   const totalCost = expenseDetails.reduce((total, item) => total + item.cost, 0);
 
-  return (
-    <div>
-      <form id="expense-tracker" onSubmit={onAddExpense}>
-        <input
-          type="text"
-          placeholder="Enter expense name"
-          value={expenseName}
-          onChange={(e) => setExpenseName(e.target.value)}
-        />
-        <input
-          type="number"
-          placeholder="Enter cost"
-          value={cost}
-          onChange={(e) => setCost(e.target.value)}
-        />
-        <button type="submit">Add Expense</button>
-      </form>
+//   return (
+//     <div>
+//       <form id="expense-tracker" onSubmit={onAddExpense}>
+//         <input
+//           type="text"
+//           placeholder="Enter expense name"
+//           value={expenseName}
+//           onChange={(e) => setExpenseName(e.target.value)}
+//         />
+//         <input
+//           type="number"
+//           placeholder="Enter cost"
+//           value={cost}
+//           onChange={(e) => setCost(e.target.value)}
+//         />
+//         <button type="submit">Add Expense</button>
+//       </form>
 
-      {/* Expense Table */}
-      {expenseDetails.length > 0 && (
-        <>
-          <table border="1" style={{ marginTop: "20px", width: "300px" }}>
-            <thead>
-              <tr>
-                <th>Expense Name</th>
-                <th>Cost</th>
-              </tr>
-            </thead>
-            <tbody>
-              {expenseDetails.map((item, index) => (
-                <tr key={index}>
-                  <td>{item.name}</td>
-                  <td>{item.cost}</td>
-                </tr>
-              ))}
-              <tr>
-                <td><strong>Total</strong></td>
-                <td><strong>{totalCost}</strong></td>
-              </tr>
-            </tbody>
-          </table>
-        </>
-      )}
-    </div>
-  );
-}
+//       {/* Expense Table */}
+//       {expenseDetails.length > 0 && (
+//         <>
+//           <table border="1" style={{ marginTop: "20px", width: "300px" }}>
+//             <thead>
+//               <tr>
+//                 <th>Expense Name</th>
+//                 <th>Cost</th>
+//               </tr>
+//             </thead>
+//             <tbody>
+//               {expenseDetails.map((item, index) => (
+//                 <tr key={index}>
+//                   <td>{item.name}</td>
+//                   <td>{item.cost}</td>
+//                 </tr>
+//               ))}
+//               <tr>
+//                 <td><strong>Total</strong></td>
+//                 <td><strong>{totalCost}</strong></td>
+//               </tr>
+//             </tbody>
+//           </table>
+//         </>
+//       )}
+//     </div>
+//   );
+// }
 
 
 
