@@ -22,9 +22,11 @@ function customPromiseAll(promises) {
   });
 }
 
+
+
 // Example 1: All Promises succeed
 const p1 = Promise.resolve(1);
-const p2 = 42; 
+const p2 = 42;
 const p3 = new Promise((resolve) => setTimeout(() => resolve("done"), 1000));
 
 customPromiseAll([p1, p2, p3])

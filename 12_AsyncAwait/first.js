@@ -1,16 +1,15 @@
 
-
 // let suppose my promise takes time to resolve
 const p2=new Promise((resolve,reject)=>{
     setTimeout(()=>{
         resolve("Promise resolved value after 5 sec");
-    },10000)
+    },5000)
 })
 
 const p3=new Promise((resolve,reject)=>{
     setTimeout(()=>{
         resolve("Promise resolved value after 10 sec");
-    },5000)
+    },10000)
 })
 
 // now we will chek out with async await over here
@@ -22,7 +21,6 @@ async function handlePromise(){
   const res2=await p2; 
   console.log("is here also it is printing first ");
   console.log(res2);
-
 
   const res3=await p3; 
   console.log("is here also it is printing second ");

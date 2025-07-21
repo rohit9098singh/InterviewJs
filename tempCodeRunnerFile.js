@@ -1,19 +1,13 @@
-console.log("hello world");
+function a(){
 
-setTimeout(sayHello,5000)
-
-function sayHello(){
-    console.log("hello");
+    let x=10;
+    b();
+   function b(){
+    c();
+     function c(){
+       console.log("value ",x)
+     }
+   }
 }
 
-let startDate=new Date().getTime();
-
-let endDate=startDate;
-
-while(endDate <=startDate+10000){
-    endDate=new Date().getTime();
-}
-
-console.log(" i am expeting a package of 8 lpah")
-
-
+a();

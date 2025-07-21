@@ -13,15 +13,7 @@ function cb(){
 
 greet(cb);
 
-function greet (cb){
-   cb()
-}
 
-function cb(){
-    console.log("hello")
-}
-
-greet(cb)
 
 
 

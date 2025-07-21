@@ -34,18 +34,19 @@
 // printMyName();
 
 
-let name={
-    firstName:"rohit",
-    lastName:"singh"
-}
-let printDetails=function(hometown){
-    console.log(this.firstName,this.lastName,hometown)
-}
+// let name={
+//     firstName:"rohit",
+//     lastName:"singh"
+// }
+// let printDetails=function(hometown){
+//     console.log(this.firstName,this.lastName,hometown)
+// }
 
-printDetails.call(name,"mumbai")
+// printDetails.call(name,"mumbai")
 
-printDetails.apply(name,["alabahdh"])
+// printDetails.apply(name,["alabahdh"])
 
-let returnedRef=printDetails.bind(name,"ban")
- returnedRef();
+// let returnedRef=printDetails.bind(name,"ban")
+//  returnedRef();
+
 

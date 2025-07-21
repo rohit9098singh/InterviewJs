@@ -34,18 +34,31 @@
 // console.log(add(3,4))
 
 
-// function order(item) {
-//   return function(size) {
-//     return function(name) {
-//       return `${name}, your ${size} ${item} is ready!`;
-//     };
-//   };
-// }
+function order(item) {
+  return function(size) {
+    return function(name) {
+      return `${name}, your ${size} ${item} is ready!`;
+    };
+  };
+}
 
-// const result = order("Pizza")("Medium")("Anita");
-// const result2=order("Pizza")("Medium")("sunil");
-// console.log(result2);
-// console.log(result); 
+const result = order("Pizza")("Medium")("Anita");
+const result2=order("Pizza")("Medium")("sunil");
+console.log(result2);
+console.log(result); 
+
+
+function multiply(base){
+     return function (value){
+        return base * value;
+     }
+}
+
+const multiply2=multiply(2)
+
+for(let i=1;i<10;i++){
+    console.log(`2 * ${i} =${multiply2(i)}`)
+}
 
 
 

@@ -19,6 +19,7 @@
 // const sayHello = outer();
 // sayHello(); // Hello
 
+
 function outer() {
     function greet() {
         return "hello world ";

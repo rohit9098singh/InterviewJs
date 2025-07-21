@@ -83,9 +83,9 @@ test();
 // result();
 
 // greet()
-console.log(greet())
-const greet=function hello(){
-    console.log("hello")
-}
+// console.log(greet())
+// const greet=function hello(){
+//     console.log("hello")
+// }
 
-greet()
+// greet()

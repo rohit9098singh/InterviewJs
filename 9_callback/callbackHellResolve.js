@@ -65,13 +65,12 @@ boilWater()
   .catch((err) => {
     console.error("Something went wrong:", err);
   });
-  
 
-const val=async function(){
+
+const val = async function () {
   await boilWater();
+  await addTeaLeaves();
   await addMilk();
   await serveTea();
-  
-}
-val()
-
+};
+val();
