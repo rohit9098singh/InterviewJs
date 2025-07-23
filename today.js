@@ -1,6 +1,6 @@
-// console.log(a)
-// console.log(b)
-// var a = b = 5;
+console.log(a)
+console.log(b)
+var a = b = 5;
 
 // const func1 = (val) => {
 //     console.log(this.name , val)
@@ -18,19 +18,19 @@ const user = {
 }
 
 
-// Object.defineProperty(user,"id",{
-//     writable:false,
-// })
+Object.defineProperty(user,"id",{
+    writable:false,
+})
 
-// user.id=1234
-// console.log(user.id)
+user.id=1234
+console.log(user.id)
 
-// Object.defineProperty(user.address,"homeTown",{
-//     writable:false
-// })
+Object.defineProperty(user.address,"homeTown",{
+    writable:false
+})
 
-// user.address.homeTown="banglore"
-// console.log(user.address.homeTown)
+user.address.homeTown="banglore"
+console.log(user.address.homeTown)
 
 var removeElement = function(nums, val) {
     let newArray=[]

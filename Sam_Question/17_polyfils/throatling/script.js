@@ -25,6 +25,7 @@ const betterFunction = throttle(() => expensiveFunction("Rahul", "Delhi"), 300);
 window.addEventListener("resize", betterFunction);
 
 
+
 // flag initially true hota hai.
 
 // Jab function first time call hota hai, func() chalega aur flag false ho jayega.
