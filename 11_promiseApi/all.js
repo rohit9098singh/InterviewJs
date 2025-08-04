@@ -17,6 +17,7 @@ Promise.all([p1,p2,p3])
     console.error(err)
 })
 
+
 // success jo hai vo 3 sec ke baadh he aata hai sab ka wait karta hai 
 
 // failure but agar p2 fail hojat ahai to vo 1 sec pe he reply de deta hai kyuke vo error aagay us array of promise me then vo kise ka wait nhi karta hai agar 2 sec baadh hoga to 2 sec baadh error aayega

@@ -22,6 +22,8 @@ betterFunction("ankit");
 betterFunction("sachin");
 
 
+
+
 // let count = 0;
 
 // const getData = () => {

@@ -1,43 +1,26 @@
-// const sayHello=function (){
-//     console.log("hello")
-// }
-
-
-function greet(cb){
-   cb();
-}
-
-function cb(){
-    console.log("helo buddy")
-}
-
-greet(cb);
-
-
-
-
-
 
 // first class fucntion are the fucntion that are treated as any other varibles we can pass it to a ducntion as a an argiment we can retuen it from the fucntion asin it an other valrible and store them in data structure like array or objects
 
+// 1) passing as an argument 
 const cb = () => {
     console.log("hello buddy here i am ");
 }
 
 function hello(cb) {
-    return cb; // just return the function reference
+    return cb; 
 }
-
 
 const cbRef = hello(cb); 
 cbRef(); 
 
+
+//2) assigning it to some other variable 
 const a =function(){
     console.log("hello world ");
 }
-
 a();
 
+//3) returned from another fucntion
 function hello(){
     let a=10;
     function b(){
@@ -49,6 +32,8 @@ function hello(){
 const bRef=hello();
 bRef();
 
+
+//4) store then in data structure called array
 const sayHello = () => console.log("Hello");
 const sayHi = () => console.log("Hi");
 const sayBye = () => console.log("Bye");
@@ -59,30 +44,3 @@ greetings[0](); // Hello
 greetings[1](); // Hi
 greetings[2](); // Bye
 
-// Real life usecase to check the authMiddleware
-
-// middleware.js
-// function authMiddleware(role) {
-//     return function (req, res, next) {
-//         if (req.user && req.user.role === role) {
-//             next(); // allowed
-//         } else {
-//             res.status(403).send("Forbidden");
-//         }
-//     };
-// }
-
-// // app.js
-// const express = require("express");
-// const app = express();
-// const authMiddleware = require("./middleware");
-
-// // Using returned function from `authMiddleware` (closure + first-class function)
-// app.get("/admin", authMiddleware("admin"), (req, res) => {
-//     res.send("Welcome admin!");
-// });
-
-
-const hello=function bye(){
-    console.log("hello")
-}

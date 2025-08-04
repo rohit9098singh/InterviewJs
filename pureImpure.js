@@ -19,5 +19,3 @@ x = 10;
 console.log(addToX(2));
 
 // pure function 
-
-

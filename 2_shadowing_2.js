@@ -13,6 +13,10 @@ function greet2(){
 greet();
 greet2();
 
+
+
+
+
 // hello world, inside the greet 2
 // ============================ 2 ====================
 

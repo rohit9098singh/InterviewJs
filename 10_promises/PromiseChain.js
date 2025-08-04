@@ -41,18 +41,17 @@ promise1
   .then((greeting) => promise4(greeting))
   .catch((e) => console.log("❌ Error:", e));
 
+// const execute = async () => {
+//   try {
+//     const user = await promise1;               // ✅ no parentheses
+//     const name = await promise2(user);         // ✅ these are functions
+//     const greeting = await promise3(name);
+//     await promise4(greeting);
+//   } catch (error) {
+//     console.log("❌ Error:", error);
+//   }
+// };
 
-const execute = async () => {
-  try {
-    const user = await promise1;               // ✅ no parentheses
-    const name = await promise2(user);         // ✅ these are functions
-    const greeting = await promise3(name);
-    await promise4(greeting);
-  } catch (error) {
-    console.log("❌ Error:", error);
-  }
-};
-
-execute();
+// execute();
 
 

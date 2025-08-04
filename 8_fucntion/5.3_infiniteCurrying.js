@@ -22,3 +22,5 @@ function infiniteCurrying(arg1){
         return infiniteCurrying(arg1+args2)
     }
 }
+
+

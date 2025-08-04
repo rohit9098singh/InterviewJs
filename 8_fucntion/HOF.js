@@ -10,10 +10,10 @@ setTimeout(function () {
 
 // A function is called a Higher-Order Function if it does either of the following:
 // Takes a function as an argument ✅
-// Returns a function ✅
-// 🔸 Doing even one of these is enough to be called a higher-order function.
+// Returns a  ✅
+// 🔸 Doing even one of these is functionenough to be called a higher-order function.
 
-// 1st example when it return the fucntion
+// 2nd example when it return the fucntion
 function sayHello(){
   return function bye(){
     console.log("get lost")

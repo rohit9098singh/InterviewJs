@@ -39,3 +39,5 @@ cloned.meta.passed = false;
 console.log(original.name);        // "Rohit Singh"
 console.log(original.scores[0]);   // 10
 console.log(original.meta.passed); // true
+
+

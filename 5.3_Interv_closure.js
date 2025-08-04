@@ -1,11 +1,11 @@
-function x(){
-    for(var i=1;i<=5;i++){
-        setTimeout(()=>{
-            console.log(i)
-        },i*1000)
-    }
-    console.log("hello rohit")
-}
+// function x(){
+//     for(var i=1;i<=5;i++){
+//         setTimeout(()=>{
+//             console.log(i)
+//         },i*1000)
+//     }
+//     console.log("hello rohit")
+// }
 
 function x(){
   for (var index = 0; index < array.length; index++) {
@@ -13,7 +13,7 @@ function x(){
       setTimeout(() => {
          console.log(index)
       }, 1000*index);
-    })()
+    })(index)
     
   }
 }

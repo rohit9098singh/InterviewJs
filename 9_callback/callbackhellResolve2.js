@@ -50,10 +50,11 @@ function third (){
     })
 }
 
-async function runtasks(){
-    await one();
-    await second();
-    await third();
+// async function runtasks(){
+//     await one();
+//     await second();
+//     await third();
 
-}
-runtasks();
+// }
+// runtasks();
+
