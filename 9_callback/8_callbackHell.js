@@ -40,7 +40,6 @@ boilWater(() => {
   });
 });
 
-
 // Each step depends on the previous one, so we nest one callback inside another. It’s fine for 2–3 steps, but imagine 10 steps… it becomes a nightmare
 
 // also when the structure becoemes to long it is called as pyrimid of dom
@@ -48,3 +47,5 @@ boilWater(() => {
 // we loose control over the code in this which is aslo callled as inversion of control becasue we are giving the boil water api to call the addtoleaves api and vice versa but what if any junior developer had return it there may be lot of bugs in it and may not somehimes result in proper calling of the callback inside it
 
 // what if ke ek callback 2 bar call hojae hame nhi paa ke boil water api ke andar me kya code likha hua hai right
+
+

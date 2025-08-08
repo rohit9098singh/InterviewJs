@@ -10,9 +10,9 @@
 // Output: []
 // length = 0 clears the array.
 
-// let arr = [1, 2, 3];
-// arr.length = 5;
-// console.log(arr);
+let arr = [1, 2, 3];
+arr.length = 5;
+console.log(arr);
 
 // let arr = [1, 2, 3];
 // console.log(typeof arr);
@@ -31,8 +31,8 @@
 // Output: 4
 
 
-let arr = [1, 2, 3];
-console.log(arr.slice(1, 2));
+// let arr = [1, 2, 3];
+// console.log(arr.slice(1, 2));
 
 // splice() nikale gaye elements ka array return karta hai.
 // let arr = [1, 2, 3];

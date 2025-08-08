@@ -1,9 +1,10 @@
-const arr = [10, 20, 30];
+// const arr = [10, 20, 30];
 
-const result = arr.map((value, index, array) => {
-  console.log(value, index, array);
-  return value + 1;
-});
+// const result = arr.map((value, index, array) => {
+//   console.log(value, index, array);
+//   return value + 1;
+// });
+// console.log(result)
 
 
 const arr2 = [1, 2, 3];

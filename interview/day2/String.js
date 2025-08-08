@@ -22,25 +22,25 @@
 //  console.log("5" - undefined);
 //NaN
 
-console.log("" == 0);
-console.log("" === 0);
+console.log("" == 0); //true
+console.log("" === 0);  //false
 //Empty string coerced to number 0.
 
-console.log(" " == 0);
+console.log(" " == 0);  //true
 
-console.log("0" == false);
+console.log("0" == false);//true
 //true
 // "0" coerced to number 0, false coerced to 0.
 
-console.log(false == undefined);
+console.log(false == undefined);//false
 // Output: false
 // undefined only loosely equals null
 
-console.log(null == undefined);
+console.log(null == undefined);//true
 
-console.log("5" === 5);
+console.log("5" === 5);//false
 
 
-console.log("5" != 5);
+console.log("5" != 5);//false
 // Output: false
 // Loose inequality, "5" coerced to number 5, so they are equal.
