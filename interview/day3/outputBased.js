@@ -10,7 +10,7 @@
 //  console.log("second","A");
 //  await Promise.resolve();
 //  console.log("fouth","B");
-//  await new Promise(resolve => setTimeout(resolve, 0));
+//  await new Promise(resolve => setTimeout(resolve,  0));
 //  console.log("fifth","C");
 // }
 // console.log("first","D");   
