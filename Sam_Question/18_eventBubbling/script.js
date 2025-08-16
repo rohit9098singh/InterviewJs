@@ -11,16 +11,24 @@
 // false or no parameter => event bubbling
 // true=> event caputring  
 
-const parent=document.getElementById("parent");
+// const parent=document.getElementById("parent");
 
-parent.addEventListener("click",function(e){
-    console.log("Parent Clicked")
+// parent.addEventListener("click",function(e){
+//     console.log("Parent Clicked")
+// },false)
+
+// const child =document.getElementById("child")
+// child.addEventListener("click",()=>{
+//     console.log("child cliked ")
+// },false)
+
+document.getElementById("parent").addEventListener("click",()=>{
+     console.log("parent cliked")
+},false)
+document.getElementById("child").addEventListener("click",()=>{
+     console.log("child cliked")
 },false)
 
-const child =document.getElementById("child")
-child.addEventListener("click",()=>{
-    console.log("child cliked ")
-},false)
 
 // output dega :   Child clicked
 //                 Parent clicked

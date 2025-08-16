@@ -23,3 +23,4 @@ let newArr = arr.splice(2,4,8,9,6);
 // splice(startIndex,numberOfItemsToRemove,replaceElements
 console.log(arr); // [1,2,8,9,6,10]
 console.log(newArr);
+

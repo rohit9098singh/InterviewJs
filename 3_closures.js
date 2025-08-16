@@ -20,6 +20,8 @@
 // sayHello(); // Hello
 
 
+
+
 function outer() {
     function greet() {
         return "hello world ";
@@ -124,3 +126,13 @@ z()
 
  
   
+
+function outer(){
+    let a=10;
+    return function(){
+        console.log(a)
+    }
+}
+
+const ref=outer();
+ref();

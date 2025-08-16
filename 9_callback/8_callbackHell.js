@@ -1,6 +1,8 @@
 // Callback Hell is a situation in JavaScript where multiple
 //  nested callbacks make code hard to read, difficult to debug, and unmaintainable.
 
+import { error } from "console";
+
 // It usually happens when asynchronous operations are chained one after
 // another using callbacks — resulting in a pyramid or Christmas tree-like structure
 
@@ -32,13 +34,14 @@ function serveTea() {
 }
 
 // 🔥 Callback hell starts here
-boilWater(() => {
-  addTeaLeaves(() => {
-    addMilk(() => {
-      serveTea();
-    });
-  });
-});
+// boilWater(() => {
+//   addTeaLeaves(() => {
+//     addMilk(() => {
+//       serveTea();
+//     });
+//   });
+// });
+
 
 // Each step depends on the previous one, so we nest one callback inside another. It’s fine for 2–3 steps, but imagine 10 steps… it becomes a nightmare
 
@@ -48,4 +51,41 @@ boilWater(() => {
 
 // what if ke ek callback 2 bar call hojae hame nhi paa ke boil water api ke andar me kya code likha hua hai right
 
+const boilWater = () => {
+  return new Promise((res, rej) => {
+    setTimeout(() => {
+      console.log("boil the water");
+      res();
+    }, 3000);
+  });
+};
+const addTeaLeaves = () => {
+  return new Promise((res, rej) => {
+    setTimeout(() => {
+      console.log("add tea leaves");
+      res();
+    }, 3000);
+  });
+};
+const makeTea = () => {
+  return new Promise((res, rej) => {
+    setTimeout(() => {
+      console.log("try to make the tea");
+      res();
+    }, 3000);
+  });
+};
 
+boilWater()
+  .then(() => addTeaLeaves())
+  .then(() => makeTea())
+  .catch((error) => {
+    console.log("erroe", error);
+  });
+const teaMaking = async () => {
+  await boilWater();
+  await addTeaLeaves();
+  await makeTea();
+};
+
+teaMaking();

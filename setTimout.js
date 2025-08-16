@@ -20,6 +20,15 @@
 //     })(i)
 // }
 
+function x(){
+   for(let i=0;i<5;i++){
+        setTimeout(()=>{
+            console.log(i)
+        },1000*i)
+   }
+}
+x();
+
 
 // for(var i=0;i<5;i++){
 //     setTimeout(()=>{
@@ -30,11 +39,11 @@
 //setTimeout(callback, delay, arg1, arg2, ...)
 //arg1, arg2, ... yeh arguments callback function ke parameters me pass ho jaate hain.
 
-function closureTest(){
-    for(let i=0;i<6;i++){
-       setTimeout((i) => {
-          console.log(i)
-       }, 1000*i,i);
-    }
-}
-closureTest()
+// function closureTest(){
+//     for(let i=0;i<6;i++){
+//        setTimeout((i) => {
+//           console.log(i)
+//        }, 1000*i,i);
+//     }
+// }
+// closureTest()

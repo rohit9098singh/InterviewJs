@@ -36,3 +36,4 @@ async function runInParallel(){
     console.timeEnd("Parallel")
 }
 runInParallel();
+

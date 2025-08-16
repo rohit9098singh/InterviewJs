@@ -1,26 +1,25 @@
-let count = 0;
+// let count = 0;
 
-const getData = (hello) => {
-    console.log(`fetching data...${count++} form ${hello}`);
-}
+// const getData = (hello) => {
+//     console.log(`fetching data...${count++} form ${hello}`);
+// }
 
-const doSomeMagic = function(fn, delay) {
-    let timer;
-    return function() {
-        let context = this;
-         let args = arguments;
-        clearTimeout(timer);
-        timer = setTimeout(() => {
-            fn.apply(context, args);
-        }, delay);
-    };
-}
+// const doSomeMagic = function(fn, delay) {
+//     let timer;
+//     return function() {
+//         let context = this;
+//          let args = arguments;
+//         clearTimeout(timer);
+//         timer = setTimeout(() => {
+//             fn.apply(context, args);
+//         }, delay);
+//     };
+// }
 
-const betterFunction = doSomeMagic(getData, 300);
-betterFunction("rohit");
-betterFunction("ankit");
-betterFunction("sachin");
-
+// const betterFunction = doSomeMagic(getData, 300);
+// betterFunction("rohit");
+// betterFunction("ankit");
+// betterFunction("sachin");
 
 
 
@@ -44,3 +43,19 @@ betterFunction("sachin");
 
 // window.addEventListener("resize", betterFunction);
 
+let count=0;
+const getData=(args)=>{
+    console.log(`fetching the data ${count++}`)
+}
+
+function doSomeMagic(fn,delay){
+    let timer;
+    return function(){
+        clearTimeout(timer);
+        timer=setTimeout(()=>{
+            fn.apply(this,arguments)
+        },delay)
+    }
+}
+
+const betterFunction=doSomeMagic(getData,300)

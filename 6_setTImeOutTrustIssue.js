@@ -18,5 +18,3 @@ console.log(" i am expeting a package of 8 lpah")
 
 
 
-
-

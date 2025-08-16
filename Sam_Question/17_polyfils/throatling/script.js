@@ -1,28 +1,51 @@
+// const expensiveFunction = (name, city) => {
+//   console.log(
+//     `Expensive operation by ${name} from ${city} at`,
+//     new Date().toLocaleTimeString()
+//   );
+// };
+
+// const throttle = (func, delay) => {
+//   let flag = true;
+//   return function () {
+//     let context = this;
+//     let args = arguments;  
+//     if (flag) {
+//       func.apply(context, args);
+//       flag = false;
+//       setTimeout(() => {
+//         flag = true;
+//       }, delay);
+//     }
+//   };
+// };
+
+// const betterFunction = throttle(() => expensiveFunction("Rahul", "Delhi"), 300);
+
+// window.addEventListener("resize", betterFunction);
+
 const expensiveFunction = (name, city) => {
-  console.log(
-    `Expensive operation by ${name} from ${city} at`,
-    new Date().toLocaleTimeString()
-  );
+  console.log(`first`, name, city);
 };
 
-const throttle = (func, delay) => {
+const throttle = (fn, delay) => {
   let flag = true;
   return function () {
-    let context = this;
-    let args = arguments;  
     if (flag) {
-      func.apply(context, args);
+      fn.apply(this, arguments);
       flag = false;
       setTimeout(() => {
-        flag = true;
+        flag = true; // yeh zaroori hai
       }, delay);
     }
   };
 };
 
-const betterFunction = throttle(() => expensiveFunction("Rahul", "Delhi"), 300);
+const betterFunction = throttle(expensiveFunction, 2000);
 
-window.addEventListener("resize", betterFunction);
+// Example calls
+betterFunction("rohit", "bangalore"); // chalega
+betterFunction("amit", "delhi"); // ignore hoga agar 2 sec ke andar call kiya
 
 
 

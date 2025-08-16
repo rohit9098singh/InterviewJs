@@ -23,4 +23,3 @@ function infiniteCurrying(arg1){
     }
 }
 
-

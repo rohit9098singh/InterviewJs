@@ -1,16 +1,15 @@
-async function getData(){
-    return "Namaste";
-}
-const promiseData=getData();
+// async function getData(){
+//     return "Namaste";
+// }
+// const promiseData=getData();
 
-promiseData.then((data)=>{
-    console.log(data)
-})
+// promiseData.then((data)=>{
+//     console.log(data)
+// })
 
-console.log(promiseData)
+// console.log(promiseData)
 
-
-// if i return the promise from the fucntion in that case 
+// if i return the promise from the fucntion in that case
 
 // const p=new Promise((resolve,reject)=>{
 //     resolve("Promise resolved value")
@@ -23,3 +22,20 @@ console.log(promiseData)
 // const promiseData2=getData().then((data)=>{
 //     console.log(data)
 // })
+
+async function getData() {
+  return "namaste";
+}
+
+// const resolvePromsie=async()=>{
+//     const result=await getData();
+//     console.log(result)
+// }
+
+// resolvePromsie();
+
+getData()
+  .then((res) => console.log("result", res))
+  .catch((err) => {
+    console.log(err);
+  });

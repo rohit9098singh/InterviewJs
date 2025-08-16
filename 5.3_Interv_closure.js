@@ -7,20 +7,20 @@
 //     console.log("hello rohit")
 // }
 
-function x(){
-  for (var index = 0; index < array.length; index++) {
-    (function close(index){
-      setTimeout(() => {
-         console.log(index)
-      }, 1000*index);
-    })(index)
-    
-  }
-}
+// function x(){
+//   for (var index = 0; index < array.length; index++) {
+//     (function close(index){
+//       setTimeout(() => {
+//          console.log(index)
+//       }, 1000*index);
+//     })(index)
 
-// x(); // hello rohit 6 6 6 6 6 6 behave this way because closuere remeber the reference of i not the value of i 
+//   }
+// }
 
-// quick way to fix this is to use let insted of var => reson let has a block scope so everytime the loop runs by the tme one is in queue i is a new varible evrytime rach time setTimeOut is called it has a new copy of i 
+// x(); // hello rohit 6 6 6 6 6 6 behave this way because closuere remeber the reference of i not the value of i
+
+// quick way to fix this is to use let insted of var => reson let has a block scope so everytime the loop runs by the tme one is in queue i is a new varible evrytime rach time setTimeOut is called it has a new copy of i
 
 // function x(){
 //     for(let i=1;i<=5;i++){
@@ -32,7 +32,6 @@ function x(){
 // }
 
 // x();
-
 
 // ======== but what if i had to do with var itself ========
 
@@ -50,7 +49,6 @@ function x(){
 
 // x();
 
-
 // =================== with iffe =================
 
 // function x(){
@@ -63,7 +61,6 @@ function x(){
 //     }
 // }
 // x()
-
 
 // function outest(){
 //     function outerFunction(params){
@@ -83,15 +80,13 @@ function x(){
 // result();
 // outest()("hello")();
 
-  function add(){
-    for(let i=0;i<5;i++){
-      setTimeout((i)=>{
-        console.log(i)
-      },1000*i,i)
-     
-    }
+function x() {
+  for (let i = 0; i < 5; i++) {
+   ( function hello() {
+      setTimeout(() => {
+        console.log(i);
+      }, 1000 * i);
+    })()
   }
-  add();
-
-  
-
+}
+x();

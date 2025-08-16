@@ -8,3 +8,6 @@ deepCopy.b.c = 99;
 
 console.log(obj.b.c);
 console.log(deepCopy.b.c); // 99
+
+let a=[1,2,[3,4]]
+const deepClone=JSON.parse(JSON.stringify(a))
