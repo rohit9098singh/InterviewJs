@@ -44,3 +44,20 @@ greetings[0](); // Hello
 greetings[1](); // Hi
 greetings[2](); // Bye
 
+
+function base(a){
+    return function (b){
+        return a*b;
+    }
+}
+
+function cb2(){
+  console.log("hello wrold ")
+}
+function base(cb2){
+   cb2()
+}
+
+base(cb2);
+
+

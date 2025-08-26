@@ -41,6 +41,15 @@ function App() {
 }
 
 export default App;
+// We cannot make the useEffect callback itself async because React expects either nothing or a cleanup function
+//  as the return value, not a Promise. Instead, we define an async function inside it (or use an async IIFE) and call it. 
+//  This allows us to use await inside useEffect safely
 
 
 
+
+(
+  function call(){
+    console.log("hello world ")
+  }
+)()

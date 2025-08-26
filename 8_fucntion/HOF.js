@@ -14,13 +14,13 @@ setTimeout(function () {
 // 🔸 Doing even one of these is functionenough to be called a higher-order function.
 
 // 2nd example when it return the fucntion
-function sayHello(){
-  return function bye(){
+function sayHello() {
+  return function bye() {
     console.log("get lost")
   }
 }
 
-const innerFuncRef=sayHello();
+const innerFuncRef = sayHello();
 
 innerFuncRef();
 
@@ -32,3 +32,5 @@ const newArr = arr.map(function (num) {
 });
 
 console.log(newArr); // [2, 4, 6]
+
+

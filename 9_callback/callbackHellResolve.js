@@ -1,25 +1,25 @@
-{
-  /**
-    When boilWater() is called, it returns a Promise object immediately.
-    The Promise constructor runs its executor   function: (resolve) => { ... }
+// {
+//   /**
+//     When boilWater() is called, it returns a Promise object immediately.
+//     The Promise constructor runs its executor   function: (resolve) => { ... }
 
-    Inside the executor, setTimeout is registered to run after 1000ms (1 second).
-    This timer is handled by the browser's Web APIs (or libuv in Node.js).
+//     Inside the executor, setTimeout is registered to run after 1000ms (1 second).
+//     This timer is handled by the browser's Web APIs (or libuv in Node.js).
 
-    Meanwhile, JavaScript continues executing other code (non-blocking)
-    After 1000ms, the callback inside setTimeout (console.log("boil"), resolve()) is placed in the callback queue
+//     Meanwhile, JavaScript continues executing other code (non-blocking)
+//     After 1000ms, the callback inside setTimeout (console.log("boil"), resolve()) is placed in the callback queue
 
-    When the call stack is clear, the event loop pushes the callback onto the call stack.
+//     When the call stack is clear, the event loop pushes the callback onto the call stack.
 
-    console.log("boil") runs.
+//     console.log("boil") runs.
 
-    Then resolve() is called — this tells the Promise: "we’re done".
+//     Then resolve() is called — this tells the Promise: "we’re done".
 
-    The Promise transitions from pending to fulfilled.
+//     The Promise transitions from pending to fulfilled.
 
-    Any .then() handlers attached to boilWater() will now execute
-    **/
-}
+//     Any .then() handlers attached to boilWater() will now execute
+//     **/
+// }
 
 function boilWater() {
   return new Promise((resolve) => {
@@ -74,3 +74,4 @@ const val = async function () {
   await serveTea();
 };
 val();
+

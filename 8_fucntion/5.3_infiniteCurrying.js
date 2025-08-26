@@ -14,12 +14,3 @@ function infiniteCurrying(val1){
 console.log(infiniteCurrying(1)(2)(3)(4)(5)(6)(78)())
 
 
-function infiniteCurrying(arg1){
-    return function(args2){
-        if(!args2){
-            return arg1
-        }
-        return infiniteCurrying(arg1+args2)
-    }
-}
-

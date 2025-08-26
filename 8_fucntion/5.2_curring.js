@@ -32,32 +32,43 @@
 
 // console.log(add(3,4))
 
-function order(item) {
-  return function (size) {
-    return function (name) {
-      return `${name}, your ${size} ${item} is ready!`;
-    };
-  };
+// function order(item) {
+//   return function (size) {
+//     return function (name) {
+//       return `${name}, your ${size} ${item} is ready!`;
+//     };
+//   };
+// }
+
+// const result = order("Pizza")("Medium")("Anita");
+// const result2 = order("Pizza")("Medium")("sunil");
+// console.log(result2);
+// console.log(result);
+
+// function multiply(base){
+//      return function (value){
+//         return base * value;
+//      }
+// }
+
+// const multiply2=multiply(2)
+
+// for(let i=1;i<10;i++){
+//     console.log(`2 * ${i} =${multiply2(i)}`)
+// }
+
+
+function base(val1){
+  return function Child(val2){
+         return val1*val2
+  }
 }
 
-const result = order("Pizza")("Medium")("Anita");
-const result2 = order("Pizza")("Medium")("sunil");
-console.log(result2);
-console.log(result);
+const ref=base(2);
+for(let i=0;i<5;i++){
 
-function multiply(base){
-     return function (value){
-        return base * value;
-     }
+  console.log(`2*{i}= ${ref(2*i)}`)
 }
-
-const multiply2=multiply(2)
-
-for(let i=1;i<10;i++){
-    console.log(`2 * ${i} =${multiply2(i)}`)
-}
-
-
 
 
 
