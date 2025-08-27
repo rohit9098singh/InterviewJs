@@ -22,23 +22,6 @@ function customPromiseAll(promises) {
   });
 }
 
-const customPromiseAll=(promises)=>{
-  return new Promise((res,rej)=>{
-    let result=[]
-    let completed=0;
-    Promise.forEach((promise,index)=>{
-        Promise.resolve(promise).then((value)=>{
-          result[index]=value;
-          completed++;
-          if(completed=== promises.length){
-            res(result)
-          }
-        }).catch((err)=>{
-          console.log(err)
-        })
-    })
-  })
-}
 
 // Example 1: All Promises succeed
 const p1 = Promise.resolve(1);

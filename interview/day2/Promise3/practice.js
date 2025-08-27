@@ -1,3 +1,5 @@
+import { waitForDebugger } from "inspector";
+
 const MyPromise = new Promise((res, rej) => {
   document.getElementById("btn").addEventListener("click", () => {
     res("✅ Resolved");
@@ -39,3 +41,5 @@ document.getElementById("btn2").addEventListener("click", () => {
 
   promise.catch((err) => console.log(err));
 });
+
+

@@ -11,8 +11,8 @@ let a=[...x]  // 1,2,3
 
 // passing array of values as individual argument to a function
 
-function createExample(args1,args2,args3){
-     console.log("whats here ",args1,args2,args3)
+function createExample(...args){
+     console.log("whats here ",args)
 }
 
 createExample(...a)
