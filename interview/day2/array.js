@@ -32,11 +32,14 @@
 
 // let arr = [1, 2, 3];
 // console.log(arr.slice(1, 2));
+// console.log(arr)
 
 // splice() nikale gaye elements ka array return karta hai.
 let arr = [1, 2, 3];
 console.log(arr.splice(1, -1));
 console.log(arr)
+// Dekho, splice(start, deleteCount) ka second parameter (deleteCount) always ≥ 0 hona chahiye.
+// Agar tum negative value doge (-1 jaise), to JavaScript usko 0 treat karta hai.
 
 // let arr = ["a", "b", "c"];
 // console.log(arr.join("-"));

@@ -80,3 +80,12 @@ var x = 23;
 })();
  
 console.log(undefined++)
+
+var x=23;
+function add(){
+  let a=23;
+  return function inner(){
+      let c=20;
+      console.log(c)
+  }
+}

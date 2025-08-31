@@ -28,4 +28,22 @@ console.log("Original:", original);
 console.log("Copy:", copy);
 
 
+function deepClone(obj){
+  if(obj===null && typeof obj !==Object){
+    return obj;
+  }
+  if(Array.isArray(obj)){
+    return obj.map((item)=>deepClone(item));
+  }
+
+  const newObj={};
+  for(let key in obj){
+      if(obj.hasOwnProperty(key)){
+          newObj[key]=deepClone(obj[key]);
+      }
+  }
+  return newObj;
+}
+
+
 

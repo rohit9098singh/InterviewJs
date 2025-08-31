@@ -22,3 +22,16 @@ const object2={
     }
 }
 object2.x();
+
+// object lexical scope nhi banat hai 
+
+
+// 1) object.x()
+
+// x ek normal function hai.
+
+// Normal function ka this runtime / call-site pe decide hota hai.
+
+// Tumne ise object.x() ke through call kiya → toh this = object.
+
+// 👉 Output: object
