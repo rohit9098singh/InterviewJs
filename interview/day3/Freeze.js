@@ -16,13 +16,13 @@
 
 
 
-function any(){
+// function any(){
   
-    c=1;
+//     c=1;
   
-}
-any()
-console.log(c)
+// }
+// any()
+// console.log(c)
 
 // console.log(012)
 
@@ -49,40 +49,40 @@ console.log(c)
 // const value=new abc();
 // console.log(value)
 
-// let user={
-//     name:"hello",
-//     age:29
-// }
+let user={
+    name:"hello",
+    age:29
+}
 
-// const {name,age}=user;
-// console.log(name,user)
+const {name,age}=user;
+console.log(name,user)
 
-// // Step 1: Nayi key banake purani value assign karo
-// user.username = user.name;
+// Step 1: Nayi key banake purani value assign karo
+user.username = user.name;
 // // Step 2: Purani key hata do
-// delete user.name;
-// console.log(user);
-
-
-user["user-name"] = user.name;
-// Step 2: Delete the old key
 delete user.name;
 console.log(user);
+
+
+// user["user-name"] = user.name;
+// // Step 2: Delete the old key
+// delete user.name;
+// console.log(user);
 
 
 //================================================
 
 // when object key is in "" we cannot user . in that case 
 
-// let details={
-//     "user-name":"abs",
-//     "age":"23"
-// }
+let details={
+    "user-name":"abs",
+    "age":"23"
+}
 
-// const { ["user-name"]: userName, age:userAge } = details;
+const { ["user-name"]: userName, age:userAge } = details;
 
-// console.log(userName); // abs
-// console.log(age);
+console.log(userName); // abs
+console.log(userAge);
 
 
 //==============================================

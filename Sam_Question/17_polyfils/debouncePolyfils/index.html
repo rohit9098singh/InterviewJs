@@ -1,13 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Debounce Example</title>
 </head>
 <body>
-    <input type="text" onkeyup="betterFunction(event)" style="border: 1px solid black; padding: 4px; margin-top: 50px;">
-  <script src="./script.js"></script>    
+  <h2>Debounce Example</h2>
+  <input 
+    type="text" 
+    placeholder="Type something..." 
+    onkeyup="betterFunction(event)" 
+    style="border: 1px solid black; padding: 6px; margin-top: 50px; width: 200px;"
+  />
+
+  <script>
+    let count = 0;
+
+    // Original function
+    const getData = (event) => {
+      console.log(`Fetching data ${count++} with value: ${event.target.value}`);
+    };
+
+    // Debounce function
+    function doSomeMagic(fn, delay) {
+      let timer;
+      return function (...args) {
+        clearTimeout(timer);
+        timer = setTimeout(() => {
+          fn.apply(this, args);
+        }, delay);
+      };
+    }
+
+    // Debounced version of getData
+    const betterFunction = doSomeMagic(getData, 500);
+  </script>
 </body>
 </html>
-

@@ -1,6 +1,6 @@
-// setTimeout(() => console.log("setTimeout"), 0);
-// Promise.resolve().then(() => console.log("Promise"));
-// console.log("End");
+setTimeout(() => console.log("setTimeout"), 0);
+Promise.resolve().then(() => console.log("Promise"));
+console.log("End");
 
 
 // in js promise cannot be resoved twice Once a Promise is settled its state is immutable — it cannot be changed again.
@@ -25,8 +25,8 @@ a();
 console.log(3);
 
 // await breaks the function into two parts:
-// Everything before await runs synchronously.
-// Everything after await goes to the microtask queue and runs after current call stack is empty.
+// Everything s synchronously.
+// Everything after await gobefore await runes to the microtask queue and runs after current call stack is empty.
 
 // await null;
 // is actually:

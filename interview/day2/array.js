@@ -17,8 +17,8 @@
 // console.log(typeof arr);
 //Output: "object"
 
-// console.log([1, 2] == [1, 2]);
-//Output: false
+console.log([1, 2] == [1, 2]); // false
+console.log(JSON.stringify([1, 2]) == JSON.stringify([1, 2]));  // true
 // 🧠 Different references in memory.
 
 

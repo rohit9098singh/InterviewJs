@@ -1,20 +1,20 @@
 async function showFunction(){
     return "hello"
 }
-console.log(showFunction())
+console.log("first value",showFunction())
 
 async function showFunction2(){
      while(true){
         await 1
      }
 }
-console.log(showFunction2());
+console.log("check out here ",showFunction2());
 
 async function showFunction3(){
     throw "Rejected without using new Promise "
 }
 
-console.log(showFunction3())
+console.log("third value at here ",showFunction3())
 
 //three ways to create a promsie without using new Promise
 

@@ -58,3 +58,24 @@ const user2 = {
 
 wrapper.call(user1);   // Output: Rohit
 wrapper.call(user2);  // Output: Deepika
+
+
+
+let person1={
+    name:"Rohit ",
+    lastName:"singh"
+}
+
+let person2={
+    name:"Rohit ",
+    lastName:"singh"
+}
+
+function printname(thid){
+   console.log(this.name,this.lastName,thid)
+}
+
+printName.call(person1,"hello")
+printName.apply(person1,["byur"])
+const res=printName.bind(person1,"hello")
+res()

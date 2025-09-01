@@ -3,9 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Throttle Resize Example</title>
 </head>
 <body>
-    <script src="./script.js"></script>
+    <h2>Resize the window and check console</h2>
+
+    <script>
+        // The function we want to throttle
+        const expensiveFunction = (event) => {
+            console.log(`Window resized to: ${window.innerWidth}x${window.innerHeight} at`, new Date().toLocaleTimeString());
+        };
+
+        // Throttle function
+        const throttle = (fn, delay) => {
+            let flag = true;
+            return function (...args) {
+                if (flag) {
+                    fn.apply(this, args);
+                    flag = false;
+                    setTimeout(() => {
+                        flag = true; // Allow next execution
+                    }, delay);
+                }
+            };
+        };
+
+        // Wrap expensiveFunction with throttle
+        const betterFunction = throttle(expensiveFunction, 1000); // 1 second delay
+
+        // Attach to window resize
+        window.addEventListener("resize", betterFunction);
+    </script>
 </body>
 </html>

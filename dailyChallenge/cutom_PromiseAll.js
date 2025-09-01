@@ -1,3 +1,5 @@
+const { error } = require("console");
+
 function customPromiseAll(promises) {
   return new Promise((resolve, reject) => {
     const result = [];
@@ -46,3 +48,5 @@ customPromiseAll([p1, p4, p3])
   .catch((err) => {
     console.log("Caught error:", err); // "error"
   });
+
+

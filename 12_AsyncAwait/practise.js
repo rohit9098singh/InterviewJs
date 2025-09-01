@@ -1,11 +1,21 @@
-// async function getData(){
-//     return "Namaste";
-// }
+async function getData(){
+    return "Namaste";
+}
 // const promiseData=getData();
 
 // promiseData.then((data)=>{
 //     console.log(data)
 // })
+
+const resu=async ()=>{
+const res= await getData()
+  console.log(res)
+}
+resu()
+
+// getData().then((res)=>{
+//   console.log(res)
+// }).catch((error)=>{console.log(error)})
 
 // console.log(promiseData)
 
