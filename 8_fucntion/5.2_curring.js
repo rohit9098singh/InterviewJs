@@ -13,38 +13,6 @@
 
 // with closure
 
-// let multiply2 =function(x){
-//      return function(y){  // this y varible has an excess to x even after return itself this is only what closure is
-//         console.log(x*y);
-//      }
-// }
-
-// let multiplyByTwo=multiply2(2);
-// multiplyByTwo(3);
-// multiplyByTwo(4);
-// multiplyByTwo(5);
-// multiplyByTwo(6);
-// console.log(typeof(NaN))
-
-// function add(a,b){
-//    return a+b;
-// }
-
-// console.log(add(3,4))
-
-// function order(item) {
-//   return function (size) {
-//     return function (name) {
-//       return `${name}, your ${size} ${item} is ready!`;
-//     };
-//   };
-// }
-
-// const result = order("Pizza")("Medium")("Anita");
-// const result2 = order("Pizza")("Medium")("sunil");
-// console.log(result2);
-// console.log(result);
-
 // function multiply(base){
 //      return function (value){
 //         return base * value;
@@ -58,16 +26,16 @@
 // }
 
 
-function base(val1){
-  return function Child(val2){
-         return val1*val2
+function Base(value1){
+  return function(value2){
+    return value1*value2
   }
 }
 
-const ref=base(2);
-for(let i=0;i<5;i++){
+const ref=Base(2);
 
-  console.log(`2*{i}= ${ref(2*i)}`)
+for(let i=0;i<10;i++){
+  console.log(`2*{i}=${ref(i)}`)
 }
 
 
