@@ -8,6 +8,7 @@
 //   configurable: false    
 // });
 
+
 // user.id = 999;       // ❌ won't change
 // delete user.id;      // ❌ won't delete
 // user.name = "Amit";  // ✅ allowed
@@ -22,15 +23,15 @@
   
 // }
 // any()
-// console.log(c)
+// console.log("here",c)
 
 // console.log(012)
 
-// foo()
-// function foo(){
-//     console.log("hello")
-// }
-// foo()
+foo()
+function foo(){
+    console.log("hello")
+}
+foo()
 
 // async function hello(){
 //     return "fuck"
@@ -42,12 +43,13 @@
 // }
 // callfuncion()
 
-// function abc(){
-//     console.log("hii")
-// }
+function abc(){
+    console.log("hii")
+    let a=10
+}
 
-// const value=new abc();
-// console.log(value)
+const value=new abc();
+
 
 let user={
     name:"hello",

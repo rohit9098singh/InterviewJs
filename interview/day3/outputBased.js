@@ -6,16 +6,16 @@
 // }).then(() => console.log("fourth"));
 // console.log("third");
 
-// async function foo() {
-//  console.log("second","A");
-//  await Promise.resolve();
-//  console.log("fouth","B");
-//  await new Promise(resolve => setTimeout(resolve,  0));
-//  console.log("fifth","C");
-// }
-// console.log("first","D");   
-// foo();
-// console.log("third",  "E")
+async function foo() {
+ console.log("second","A");
+ await Promise.resolve();
+ console.log("fouth","B");
+ await new Promise(resolve => setTimeout(resolve,  0));
+ console.log("fifth","C");
+}
+console.log("first","D");   
+foo();
+console.log("third",  "E")
 
 // let c=0;
 // let id = setInterval(() => {

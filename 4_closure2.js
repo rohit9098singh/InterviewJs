@@ -26,7 +26,6 @@
 //   const myAccount = createBankAccount(1000);
 
 
-
 //   myAccount.deposit(500);       // Deposited ₹500. New Balance: ₹1500
 //   myAccount.withdraw(200);      // Withdrew ₹200. New Balance: ₹1300
 //   console.log(myAccount.getBalance()); // 1300

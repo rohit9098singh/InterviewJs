@@ -11,3 +11,7 @@ console.log(deepCopy.b.c); // 99
 
 let a=[1,2,[3,4]]
 const deepClone=JSON.parse(JSON.stringify(a))
+
+deepClone[2][0]=12;
+console.log("hehre",deepClone)
+console.log(a)

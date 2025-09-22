@@ -20,3 +20,6 @@ console.log(findMethod())
  }
 
  console.log(findIndexMethod());
+
+
+ 

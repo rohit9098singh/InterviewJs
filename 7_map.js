@@ -83,4 +83,3 @@ function passingStudents() {
 
 console.log(passingStudents());  
 // Expected output: ['Alice', 'Charlie']
-

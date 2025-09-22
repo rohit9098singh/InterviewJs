@@ -13,6 +13,6 @@ let obj1={
     class:true
 }
 const user=Object.create(obj1)
-console.log(user)
+console.log(user.name)
 
 

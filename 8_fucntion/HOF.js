@@ -34,3 +34,5 @@ const newArr = arr.map(function (num) {
 console.log(newArr); // [2, 4, 6]
 
 
+
+

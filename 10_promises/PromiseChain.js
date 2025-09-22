@@ -94,14 +94,14 @@ addMilk()
     console.log(err);
   });
 
-const result = async () => {
-  await addMilk();
-  await addTeaLeaves();
-  await addSugar();
-  await serve();
-};
+// const result = async () => {
+//   await addMilk();
+//   await addTeaLeaves();
+//   await addSugar();
+//   await serve();
+// };
 
-result();
+// result();
 
 
 

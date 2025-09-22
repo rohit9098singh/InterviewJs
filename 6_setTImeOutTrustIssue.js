@@ -28,3 +28,5 @@ function delay(ms) {
 console.log("Start");
 delay(2000);  // 2 sec delay
 console.log("End after 2 sec");
+
+

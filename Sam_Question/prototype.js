@@ -16,3 +16,5 @@ std2.exp = "10"; // Override instance property
 
 console.log(std1.company);
 console.log(std2);
+
+

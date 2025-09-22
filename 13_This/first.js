@@ -16,6 +16,9 @@ const obj={
     a:10,
     x:function(){
         console.log(this)
+    },
+    y:()=>{
+        console.log(this.a)
     }
 }
 obj.x();  // the value this in object becomes the object itself inside which it is getting called at there 

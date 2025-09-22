@@ -52,3 +52,10 @@ obj.greet();
 
 
 
+
+// Normal function (in setTimeout)
+
+// this decide hota hai execution time par → default/global/undefined milta hai.
+
+// 🟢 Arrow function (in setTimeout)
+// this decide hota hai creation time par → surrounding scope ka this capture karke lock kar leta hai

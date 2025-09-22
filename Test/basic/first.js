@@ -15,6 +15,7 @@ function restOperator(obj, ...args) {
     console.log(res);
 }
 
+
 restOperator(
   { name: "rohit", age: 16 },
   { name: "abhishek", age: 12 },

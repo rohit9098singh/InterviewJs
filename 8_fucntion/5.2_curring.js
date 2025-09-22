@@ -35,8 +35,19 @@ function Base(value1){
 const ref=Base(2);
 
 for(let i=0;i<10;i++){
-  console.log(`2*{i}=${ref(i)}`)
+  console.log(`2*${i}=${ref(i)}`)
 }
 
 
+function  currying(BaseValue){
+   return function(childValue){
+    return BaseValue * childValue
+   }
+}
 
+const ref2=currying(2)
+
+for(let i=0;i<10;i++){
+
+  console.log(`2 * ${i} = ${ref2(i)}`)
+}

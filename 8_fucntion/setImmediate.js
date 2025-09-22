@@ -1,15 +1,14 @@
 // What is setImmediate()?
 // setImmediate() is a Node.js-only function (not available in browsers) that allows you to execute a callback after the current event loop phase ends — before any timers like setTimeout() with 0ms.
 
-const fs = require("fs");
+const greatHello=()=>{
+  console.log("hello world");
+}
 
-setTimeout(() => {
-  fs.readFile(__filename, () => {
-    console.log("file read");
-  });
-}, 0);
+setTimeout(()=>{
+  greatHello();
+},3000)
 
-setImmediate(() => {
-  console.log("immediate");
-});
-
+setImmediate(()=>{
+  console.log("immediate fucntion");
+},4000)

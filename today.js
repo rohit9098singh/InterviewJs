@@ -21,12 +21,12 @@ user.sex="male"
 console.log(user);
 
 
-// Object.defineProperty(user,"id",{
-//     writable:false,
-// })
+Object.defineProperty(user,"id",{
+    writable:false,
+})
 
-// user.id=1234
-// console.log(user.id)
+user.id=1234
+console.log(user.id)
 
 // Object.defineProperty(user.address,"homeTown",{
 //     writable:false
