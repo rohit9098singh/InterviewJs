@@ -1,22 +1,22 @@
-// const obj = {
-//   name: 'Rohit',
-//   greet: function() {
-//     console.log("greet this:", this); // ✅ obj
+const obj1 = {
+  name: 'Rohit',
+  greet: function() {
+    console.log("greet this:", this); // ✅ obj
 
-//     setTimeout(function() {
-//       console.log("setTimeout this:", this); // ❌ global / undefined
+    setTimeout(function() {
+      console.log("setTimeout this:", this); // ❌ global / undefined
 
-//       function inner() {
-//         console.log("inner this:", this); // ❌ global / undefined
-//         console.log("inner name:", this.name); // ❌ undefined
-//       }
+      function inner() {
+        console.log("inner this:", this); // ❌ global / undefined
+        console.log("inner name:", this.name); // ❌ undefined
+      }
 
-//       inner();
-//     }, 1000);
-//   }
-// };
+      inner();
+    }, 1000);
+  }
+};
 
-// obj.greet();
+obj1.greet();
 
 // ❌ Output:
 //               greet this: obj

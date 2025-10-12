@@ -11,8 +11,9 @@
 // 7 Write an ES6 function combineObjects with least amount of characters which merges two objects into one.
 
 function restOperator(obj, ...args) {
+  console.log("check the values at here ",args)
     const res = args.reduce((acc, curr) => ({ ...acc, ...curr }), { ...obj });
-    console.log(res);
+    console.log("resultant",res);
 }
 
 

@@ -44,3 +44,8 @@ console.log("5" === 5);//false
 console.log("5" != 5);//false
 // Output: false
 // Loose inequality, "5" coerced to number 5, so they are equal.
+
+
+console.log(false == undefined); // ❌ false
+console.log(false == 0);         // ✅ true
+console.log(undefined == null);  

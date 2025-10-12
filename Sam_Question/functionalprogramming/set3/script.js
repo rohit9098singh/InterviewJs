@@ -196,7 +196,7 @@ const lastSecondFunction=(arr)=>{
   return arr.reduce((acc, curr) => acc + curr, " ,");
 };
 
-console.log(lastSecondFunction(fruits))
+console.log("stringed value at here ",lastSecondFunction(fruits))
 
 
 // Write an ES6 function that takes an array of numbers and returns the minimum number using the reduce function.

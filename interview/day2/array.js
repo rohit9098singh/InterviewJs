@@ -30,14 +30,14 @@ console.log(JSON.stringify([1, 2]) == JSON.stringify([1, 2]));  // true
 // Output: 4
 
 
-// let arr = [1, 2, 3];
-// console.log(arr.slice(1, 2));
-// console.log(arr)
+let arr = [1, 2, 3];
+console.log(arr.slice(1, 2));
+console.log("slice value is what at here jsut check it out here ",arr)
 
 // splice() nikale gaye elements ka array return karta hai.
-let arr = [1, 2, 3];
-console.log(arr.splice(1, -1));
-console.log("shayad as it is return ho jaygwa vo",arr)
+// let arr = [1, 2, 3];
+// console.log(arr.splice(1, -1));
+// console.log("shayad as it is return ho jaygwa vo",arr)
 // Dekho, splice(start, deleteCount) ka second parameter (deleteCount) always ≥ 0 hona chahiye.
 // Agar tum negative value doge (-1 jaise), to JavaScript usko 0 treat karta hai.
 

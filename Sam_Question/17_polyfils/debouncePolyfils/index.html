@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -37,4 +37,32 @@
     const betterFunction = doSomeMagic(getData, 500);
   </script>
 </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+     <input type="text" onkeyup="betterFunction(event)">
+</body>
+<script>
+    let count=0;
+    const getData=(event)=>{
+      console.log(`get data called for the ${count++} time and with value : ${event.target.value}`)
+    }
+    const doSomeMagic=(fn,delay)=>{
+        let timer;
+        return function(...args){
+             clearTimeout(timer);
+            timer= setTimeout(() => {
+                 fn.apply(this,args)
+             }, delay);
+        }
+    }
+    const betterFunction=doSomeMagic(getData,300)
+</script>
 </html>

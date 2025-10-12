@@ -25,3 +25,9 @@ console.log(incementCount())
 // console.log(arr); // [1,2,8,9,6,10]
 // console.log(newArr);
 
+let a=10;
+function check(a,b){
+    return a +b;
+}
+a=30
+console.log("final result at here ",check(a,10))

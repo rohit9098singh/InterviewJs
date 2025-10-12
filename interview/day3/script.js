@@ -3,16 +3,16 @@
 //   .then((num) => Promise.resolve(num * 2))
 //   .then(console.log);
 // ============================================
-Promise.resolve()
-  .then(() => {
-    throw new Error("Boom");
-  })
-  .then(() => console.log("Next"))
-  .catch((e) => console.log("Caught:", e.message));
+// Promise.resolve()
+//   .then(() => {
+//     throw new Error("Boom");
+//   })
+//   .then(() => console.log("Next"))
+//   .catch((e) => console.log("Caught:", e.message));
 // ==============================================
-let p = Promise.resolve("X");
-p.then((val) => console.log("A:", val));
-p.then((val) => console.log("B:", val));
+// let p = Promise.resolve("X");
+// p.then((val) => console.log("A:", val));
+// p.then((val) => console.log("B:", val));
 // ===============================================
 
 // Promise.reject("fail")
@@ -45,13 +45,16 @@ p.then((val) => console.log("B:", val));
 //   .then(() => {
 //     return new Error("Oops");
 //   })
-//   .then((res) => console.log("Then:", res))
+//   .then((res) => console.log("Then:yaha aata ", res))
 //   .catch((e) => console.log("Catch:", e));
 
 //==============================================
 // Promise.resolve("done")
 //   .finally(() => "ignored")
 //   .then(console.log);
+
+//   .finally() is meant for cleanup.
+// The return value of finally is ignored. It does not affect the promise chain's value.
 
 //==============================================
 // let p = new Promise((res, rej) => {
@@ -76,23 +79,26 @@ p.then((val) => console.log("B:", val));
   // .then((res) => console.log(res));
 
 //============================================
-// async function test() {
-//   try {
-//     await Promise.reject("Fail");
-//   } catch (e) {
-//     console.log("Caught:", e);
-//   }
-// }
-// test();
+
+async function test() {
+  try {
+    await Promise.reject("Fail");
+  } catch (e) {
+    console.log("Caught:", e);
+  }
+}
+test();
+
+
 //============================================
 
-// Promise.all([
-//   Promise.resolve(1),
-//   Promise.reject("Error"),
-//   Promise.resolve(3),
-// ])
-//   .then((res) => console.log("Then:", res))
-//   .catch((e) => console.log("Catch:", e));
+Promise.all([
+  Promise.resolve(1),
+  Promise.reject("Error"),
+  Promise.resolve(3),
+])
+  .then((res) => console.log("Then:", res))
+  .catch((e) => console.log("Catch:", e));
 
 //============================================
 

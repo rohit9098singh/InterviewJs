@@ -34,7 +34,7 @@ const calculateTotalValue=(arr)=>{
 }
 
 console.log(calculateTotalValue(items));
-
+console.log(" "+"hellow rold ")
 
 // 4. Write an ES6 function that takes an array of strings as input and concatenates them into a single string.
 const fruits = ["apple", "banana", "cherry", "mango", "grape"];
@@ -43,7 +43,7 @@ const lastSecondFunction = (arr) => {
   return arr.reduce((acc, curr) => acc + curr, "");
 };
 
-console.log(lastSecondFunction(fruits)); // Output: "applebananacherrymangogrape"
+console.log("common common ya ya ",lastSecondFunction(fruits)); // Output: "applebananacherrymangogrape"
 
 
 //5. Write an ES6 function to multiply and return all the elements of a given array.

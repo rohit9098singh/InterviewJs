@@ -20,14 +20,14 @@
 //     })(i)
 // }
 
-function x(){
-   for(let i=0;i<5;i++){
-        setTimeout(()=>{
-            console.log(i)
-        },1000*i)
-   }
-}
-x();
+// function x(){
+//    for(let i=0;i<5;i++){
+//         setTimeout(()=>{
+//             console.log(i)
+//         },1000*i)
+//    }
+// }
+// x();
 
 
 // for(var i=0;i<5;i++){
@@ -47,3 +47,17 @@ x();
 //     }
 // }
 // closureTest()
+
+
+function check() {
+
+    for (var i = 0; i <= 4; i++) {
+        function inner(i) {
+            setTimeout(() => {
+                console.log(i)
+            }, 1000 * i)
+        }
+        inner(i)
+    }
+}
+check()
