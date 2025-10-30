@@ -19,13 +19,17 @@ function deepClone(obj) {
 
 const original = [1, 2, [3, 4]];
 
+
 const copy = deepClone(original);
+
 
 copy[0] = 99;           
 copy[2][1] = 100;       
 
+
 console.log("Original:", original);
 console.log("Copy:", copy);
+
 
 
 

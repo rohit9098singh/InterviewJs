@@ -14,15 +14,29 @@ console.log(extractVowel(str))
 
 let newString="i am a very handsome and dashing and dusky"
 
-function findLongest(str){
+// function findLongest(str){
+//     let words=str.split(" ");
+//     console.log(words)
+//     let longest="";
+//     for(let i=0;i<words.length;i++){
+//            if(words[i].length > longest.length){
+//                longest=words[i];
+//            }
+//     }
+//     return longest;
+// }
+// console.log(findLongest(newString))
+
+function longestString(str){
     let words=str.split(" ");
-    console.log(words)
-    let longest="";
+    console.log("inner dubugger",words)
+    let res="";
     for(let i=0;i<words.length;i++){
-           if(words[i].length > longest.length){
-               longest=words[i];
-           }
+        if(words[i].length>res.length){
+            res=words[i]
+        }
     }
-    return longest;
+    return res
 }
-console.log(findLongest(newString))
+
+console.log("what am i getting at here",longestString(newString))

@@ -7,18 +7,18 @@
 //     console.log("hello rohit")
 // }
 
-// function x(){
-//   for (var index = 0; index < array.length; index++) {
-//     (function close(index){
-//       setTimeout(() => {
-//          console.log(index)
-//       }, 1000*index);
-//     })(index)
+function x(){
+  for (var index = 0; index <5; index++) {
+    (function close(index){
+      setTimeout(() => {
+         console.log(index)
+      }, 1000*index);
+    })(index)
+  }
+}
+x(); 
 
-//   }
-// }
-
-// x(); // hello rohit 6 6 6 6 6 6 behave this way because closuere remeber the reference of i not the value of i
+// hello rohit 6 6 6 6 6 6 behave this way because closuere remeber the reference of i not the value of i
 
 // quick way to fix this is to use let insted of var => reson let has a block scope so everytime the loop runs by the tme one is in queue i is a new varible evrytime rach time setTimeOut is called it has a new copy of i
 
@@ -80,13 +80,13 @@
 // result();
 // outest()("hello")();
 
-function x() {
-  for (let i = 0; i < 5; i++) {
-   ( function hello() {
-      setTimeout(() => {
-        console.log(i);
-      }, 1000 * i);
-    })()
-  }
-}
-x();
+// function x() {
+//   for (let i = 0; i < 5; i++) {
+//    ( function hello() {
+//       setTimeout(() => {
+//         console.log(i);
+//       }, 1000 * i);
+//     })()
+//   }
+// }
+// x();

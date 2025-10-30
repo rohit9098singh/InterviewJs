@@ -13,15 +13,15 @@
 
 // // changed by refernce
 
-// let person={name:'aman'};
+let person={name:'aman'};
 
-// function changePerson(obj){
-//    obj.name="bandar";
-//    console.log("changed name",obj.name)
-// }
+function changePerson(obj){
+   obj.name="bandar";
+   console.log("changed name",obj.name)
+}
 
-// changePerson(person);
-// console.log("outside fucntion",person.name)
+changePerson(person);
+console.log("outside fucntion",person.name)
 
 // var user={
 //     name:"rohit"

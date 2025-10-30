@@ -1,12 +1,13 @@
 let obj = {
   count: 0,
   increment: function () {
-    setTimeout(function () {
+    setTimeout(()=> {
       console.log(this.count++);
     }, 1000);
   },
 };
 
+obj.increment();
 obj.increment();
 
 // Inside the setTimeout, you're using a regular function, not an arrow function. 

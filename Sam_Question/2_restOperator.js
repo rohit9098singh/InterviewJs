@@ -5,19 +5,23 @@ Example(1,2,3,4);
 
 
 
-function restOperator(firstObj,...restObject){
-    const res= restObject.reduce((acc,curr)=>({...acc,...curr}),{...firstObj})
-    console.log(res)
+
+// function restOperator(firstObj,...restObject){
+//     const res= restObject.reduce((acc,curr)=>({...acc,...curr}),{...firstObj})
+//     console.log(res)
+// }
+
+function restOperator(firstObj,restObj){
+  const res=restObj.reduce((acc,curr)=>({...acc,...restObj}),{...restObj})
 }
 
 
-
-// restOperator(
-//   { name: "rohit", age: 16 },
-//   { name: "abhishek", age: 12 },
-//   { city: "Delhi" },
-//   {language:"bangoli",name:"bhikari"}
-// );
+restOperator(
+  { name: "rohit", age: 16 },
+  { name: "abhishek", age: 12 },
+  { city: "Delhi" },
+  {language:"bangoli",name:"bhikari"}
+);
 
 
 //===================================================

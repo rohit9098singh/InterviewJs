@@ -33,6 +33,14 @@ function promise1(){
   })
 }
 
+const p6=new Promise((res,rej)=>{
+  setTimeout(()=>{
+    console.log("p1 success");
+    res
+  })
+})
+
+
 
 // success jo hai vo 3 sec ke baadh he aata hai sab ka wait karta hai
 

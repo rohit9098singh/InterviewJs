@@ -12,8 +12,8 @@ const arr2 = [1, 2, 3, 4, 5];
 
 const result2 = arr2.filter(num => num = 3);
 
-console.log(result2);
-// Output: [1, 2]
+console.log("help",result2);
+// Output: [1, 2, 3, 4, 5]
 
 // 0, null, undefined, false, NaN, "" → falsy
 
@@ -34,8 +34,8 @@ let package = {
 let application = Object.create(package, {
  name: { value: "game" },
 }); // inherited from package
-console.log(application);
-console.log(Object.getPrototypeOf("what is it",application));
+console.log(application.name);
+console.log("check wheather it is equal or not",Object.getPrototypeOf(application)===package);
 
 let a = 3;
 let b = new Number(3);

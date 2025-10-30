@@ -22,18 +22,18 @@
 
 
 
-function outer() {
-    function greet() {
-        return "hello world ";
-    }
-    function inner() {
-        return "is it her " + greet();
-    }
-    return inner;
-}
+// function outer() {
+//     function greet() {
+//         return "hello world ";
+//     }
+//     function inner() {
+//         return "is it her " + greet();
+//     }
+//     return inner;
+// }
 
-const ch = outer();
-console.log(ch()); 
+// const ch = outer();
+// console.log(ch()); 
 
 
 
@@ -88,51 +88,49 @@ console.log(ch());
 // reson is fucntion alsong with its lexical scope was returend
 
 
-function x(){
-    var a=7;
-    function y(){
-        console.log(a);
-    }
-    a=1000
-    return y;
-}
-
-var z=x();
-console.log(z)
-z() 
-
-
-// function z() {
-//     var b = 1000;
-
-//     function x() {
-//         var a = 7;
-
-//         function y() {
-//             console.log(a, b); // Accesses both a and b via closure
-//         }
-//         a=2000
-//        y();
+// function x(){
+//     var a=7;
+//     function y(){
+//         console.log(a);
 //     }
-
-//      x(); // Call x() and return y
-//      return 2
+//     a=1000
+//     return y;
 // }
-// z();
 
-// var c = z();    // c now holds function y
-// console.log(c); // Prints the function definition
-// c();            //  Calls y() — prints
+// var z=x();
+// console.log(z)
+// z() 
 
- 
-  
+function z() {
+    var b = 1000;
 
-function outer(){
-    let a=10;
-    return function(){
-        console.log(a)
+    function x() {
+        var a = 7;
+
+        function y() {
+            console.log(a, b); // Accesses both a and b via closure
+        }
+        a = 2000;
+        y();
     }
+
+    x(); // Call x() and return y
+    return 2;
 }
 
-const ref=outer();
-ref();
+z();
+
+var c = z();    // c now holds function y?
+console.log(c); 
+// c();  
+            //  Calls y() — prints
+
+// function outer(){
+//     let a=10;
+//     return function(){
+//         console.log(a)
+//     }
+// }
+
+// const ref=outer();
+// ref();

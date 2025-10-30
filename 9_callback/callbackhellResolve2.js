@@ -33,6 +33,7 @@ function one() {
         }, 1000)
     })
 }
+
 function second() {
     return new Promise((resolve) => {
         setTimeout(() => {
@@ -41,6 +42,7 @@ function second() {
         }, 1000)
     })
 }
+
 function third() {
     return new Promise((resolve) => {
         setTimeout(() => {

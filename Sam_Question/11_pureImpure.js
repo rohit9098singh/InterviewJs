@@ -6,16 +6,16 @@
 
 // impure 
 
-let count=0;
+// let count=0;
 
-function incementCount(){
-    console.log("at here ",count++)
-    count ++;
-    console.log("after changes",count);
-}
-console.log(incementCount())
-console.log(incementCount())
-console.log(incementCount())
+// function incementCount(){
+//     console.log("at here ",count++)
+//     count ++;
+//     console.log("after changes",count);
+// }
+// console.log(incementCount())
+// console.log(incementCount())
+// console.log(incementCount())
 
 
 
@@ -25,9 +25,19 @@ console.log(incementCount())
 // console.log(arr); // [1,2,8,9,6,10]
 // console.log(newArr);
 
-let a=10;
-function check(a,b){
-    return a +b;
+// let a=10;
+// function check(a,b){
+//     return a +b;
+// }
+// a=30
+// console.log("final result at here ",check(a,10))
+
+let counter = 0;
+
+function increment() {
+  counter++; // modifies external variable → side effect
+  return counter;
 }
-a=30
-console.log("final result at here ",check(a,10))
+
+console.log(increment()); // 1
+console.log(increment()); // 2

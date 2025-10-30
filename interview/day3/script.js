@@ -32,13 +32,13 @@
 
 //================================================
 
-// async function go() {
-//   console.log("Start");
-//   await new Promise((res) => setTimeout(res, 0));
-//   console.log("After timeout");
-// }
-// go();
-// console.log("Outside");
+async function go() {
+  console.log("Start");
+  await new Promise((res) => setTimeout(res, 0));
+  console.log("After timeout");
+}
+go();
+console.log("Outside");
 
 //===============================================
 // Promise.resolve("Start")

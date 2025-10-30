@@ -18,7 +18,7 @@ async function handlePromise(){
 //   console.log(res)
   console.log("hello world")
 
-  const res2=await p2; 
+  const res2=await p2; // pauekar diya 
   console.log("is here also it is printing first ");
   console.log(res2);
 

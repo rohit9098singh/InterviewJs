@@ -34,14 +34,14 @@
 
 // ================================== 4 ============================
 
-// var a =1;
+var a =1;
 
-// function test(){
-//   console.log(a);
-//   var a =2;
-// }
+function test(){
+  console.log("check it",a);
+  var a =2;
+}
 
-// test();
+test();
 
 // undefined still 
 

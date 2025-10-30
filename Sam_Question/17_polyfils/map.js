@@ -18,18 +18,34 @@
 
 
 
-const arr=[1,2,3,4,5];
+// const arr=[1,2,3,4,5];
 
+// Array.prototype.myMap=function (cb){
+//   let newArray=[];
+//   for(let i=0;i<this.length;i++){
+//       newArray.push(cb(this[i]))
+//   }
+//   return newArray;
+// }
+
+// function cb(incommingValue){
+//   return incommingValue *2
+// }
+
+// console.log(arr.myMap(cb))
+
+
+const arr=[1,2,3,4,5];
 Array.prototype.myMap=function (cb){
-  let newArray=[];
-  for(let i=0;i<this.length;i++){
-      newArray.push(cb(this[i]))
-  }
-  return newArray;
+    let newArray=[];
+    for(let i=0;i<this.length;i++){
+       newArray.push(cb(this[i]));
+    }
+    return newArray
 }
 
 function cb(incommingValue){
-  return incommingValue *2
+  return  incommingValue*2
 }
-
 console.log(arr.myMap(cb))
+;

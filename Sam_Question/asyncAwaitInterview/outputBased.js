@@ -11,13 +11,13 @@
 // console.log('D');
 
 
-// second question
+// // second question
 
-async function foo() {
-  return 42;
-}
+// async function foo() {
+//   return 42;
+// }
 
-console.log(foo());
+// console.log(foo());
 
 //Q3. Identify the issue and output:
 async function test() {

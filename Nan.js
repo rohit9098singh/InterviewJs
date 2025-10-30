@@ -17,3 +17,5 @@ console.log(result5); // NaN
 
 let res=10 + {}
 console.log(res)
+
+

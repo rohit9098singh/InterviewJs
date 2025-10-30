@@ -26,19 +26,19 @@ for(let i=0;i<5;i++){
 
 // ============================= 3 ================================
 
-// let x=100;
-// function shadowingTest(){
-//     let x=200;
-//     {
-//         let x=300;
-//         console.log(x);
-//     }
-//     console.log(x);
+let x=100;
+function shadowingTest(){
+    let x=200;
+    {
+        let x=300;
+        console.log(x);
+    }
+    console.log(x);
 
-// }
+}
 
-// shadowingTest();
-// console.log(x);
+shadowingTest();
+console.log(x);
 
 // output => 300 200 100
 

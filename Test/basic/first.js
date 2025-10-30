@@ -34,11 +34,13 @@ console.log(res);
 
 // Write a function that uses destructuring to extract the first two elements from an array, and returns them in an object with keys 'first' and 'second'.
 
-const fucntion=(arr)=>{
-    return {first:arr[0],second:arr[1]}
+const getFirstTwo = (arr) => {
+    const [first, second] = arr;
+    return { first:first, second:second };
 }
 
-console.log("return the value of first last array",fucntion([1,2,3,4]))
+console.log("i guess so we have a different output at here ",getFirstTwo([1, 2, 3, 4]));
+
 
 //Write a function that takes an array and returns the sum of first and last element.
 
