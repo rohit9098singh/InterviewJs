@@ -51,7 +51,7 @@ let package={
 
 let application=Object.create(package,{
     name:{value:"game"}
-})
+})               
 console.log(application.version);
 
 console.log("check wherther it is equal or not ",Object.getPrototypeOf(application)=== package)

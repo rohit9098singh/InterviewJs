@@ -25,7 +25,6 @@
 //     console.log(`2 * ${i} =${multiply2(i)}`)
 // }
 
-
 function Base(value1){
   return function(value2){
     return value1*value2

@@ -13,10 +13,10 @@ let student2 = {
   name: "Rohit"
 };
 
+
 // bina optional chaining:
 // console.log("this is the working of the comodity right now at here ",student2.address.city); 
 // ❌ Error: Cannot read properties of undefine
-
 
 const arr=[1,2,3,4,5];
 const res=arr.reduce(num=>num=2)
@@ -31,3 +31,5 @@ function show(name=check()){
 }
 
 console.log(show("tijdje"))
+
+
