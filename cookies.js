@@ -20,6 +20,7 @@
 // ✅ ^ (Caret)
 // Meaning: Allow updates for minor and patch, but lock the major version.
 
+//
 // Example:
 // "^1.2.3"
 
