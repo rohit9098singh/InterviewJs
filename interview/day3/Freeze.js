@@ -17,15 +17,16 @@
 
 
 
-// function any(){
+function any(){
   
-//     c=1;
+    c=1;
   
-// }
-// any()
-// console.log("here",c)
+}
+any()
+console.log("here",c)
 
-// console.log(012)
+
+// console.log("what is at here",012)
 
 foo()
 function foo(){

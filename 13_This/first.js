@@ -28,7 +28,7 @@ obj.x();  // the value this in object becomes the object itself inside which it 
 //1) generally used when we have to share methods 
 
 let printName=function(){
-     console.log(this.name)
+     console.log(this.name);
 }
 
 const student={
