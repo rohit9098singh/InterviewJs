@@ -39,6 +39,7 @@ const rejected = Promise.reject(" Immediate reject");
 resolved.then((res)=>console.log(res));
 rejected.catch((res)=>console.log(res));
 
+
 //3Use a real API
 fetch("https://jsonplaceholder.typicode.com/posts/1")
   .then(response => response.json())

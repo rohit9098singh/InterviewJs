@@ -62,23 +62,23 @@ x();
 // }
 // x()
 
-// function outest(){
-//     function outerFunction(params){
-//         let x=10;
-//         function innerFunction(){
-//            console.log(x,params)
-//         }
-//         return innerFunction;
-//     }
-//     return outerFunction;
-// }
+function outest(){
+    function outerFunction(params){
+        let x=10;
+        function innerFunction(){
+           console.log(x,params)
+        }
+        return innerFunction;
+    }
+    return outerFunction;
+}
 
-// const calling =outest();
+const calling =outest();
 
-// const result=calling("hello");
+const result=calling("hello");
 
-// result();
-// outest()("hello")();
+result();
+outest()("hello")();
 
 // function x() {
 //   for (let i = 0; i < 5; i++) {

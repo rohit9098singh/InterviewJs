@@ -49,15 +49,44 @@
 // closureTest()
 
 
-function check() {
+// function check() {
 
-    for (var i = 0; i <= 4; i++) {
-        function inner(i) {
-            setTimeout(() => {
-                console.log(i)
-            }, 1000 * i)
-        }
-        inner(i)
-    }
+//     for (var i = 0; i <= 4; i++) {
+//         function inner(i) {
+//             setTimeout(() => {
+//                 console.log(i)
+//             }, 1000 * i)
+//         }
+//         inner(i)
+//     }
+// }
+// check()
+
+
+// for(let i=1;i<=5;i++){
+//    setTimeout(()=>{
+//      console.log(i)
+//    },i*1000)
+// }
+
+// for(var i=0;i<5;i++){
+//     (
+//         function (i){
+//             setTimeout(()=>{
+//                 console.log(i)
+//             },1000*i)
+//         }
+//     )(i)
+// }
+
+// for(let i=0;i<5;i++){
+//     setTimeout(()=>{
+//        console.log(i)
+//     },i*1000,i)
+// }
+
+for(var i=0;i<5;i++){
+    setTimeout(()=>{
+        console.log(i)
+    },1000*i)
 }
-check()

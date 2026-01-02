@@ -25,7 +25,7 @@ function check(arr1,arr2){
     return true
 }
 
-console.log(check([1,2,3,4],[1,4,9,16]));
+console.log("swwwww",check([1,2,3,4],[1,4,9,16]));
 // true
 
 
@@ -59,7 +59,7 @@ function uniqueObj(arr){
     return newArray;
 }
 let arr = [{name: "sai"},{name:"Nang"},{name: "sai"}]
-console.log(uniqueObj(arr))
+console.log("unique object at here",uniqueObj(arr))
 
 
 // string into an object 

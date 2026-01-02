@@ -10,8 +10,8 @@ const object={
 object.x();
 object.y();
 
-// another case 
 
+// another case 
 const object2={
     name:"hello world",
     x:function(){
@@ -22,6 +22,8 @@ const object2={
     }
 }
 object2.x();
+
+
 
 // object lexical scope nhi banat hai 
 

@@ -27,12 +27,6 @@ function printName(thirdparams){
 
 printName.call(student1,"hello")
 
-
-
-
-
-
-
 // let package = {
 //  version: "2.0",
 // };
@@ -45,13 +39,14 @@ printName.call(student1,"hello")
 
 
 
+
 let package={
     version:"2.0"
 }
 
 let application=Object.create(package,{
     name:{value:"game"}
-})
+})               
 console.log(application.version);
 
 console.log("check wherther it is equal or not ",Object.getPrototypeOf(application)=== package)

@@ -47,5 +47,4 @@ Array.prototype.myMap=function (cb){
 function cb(incommingValue){
   return  incommingValue*2
 }
-console.log(arr.myMap(cb))
-;
+console.log(arr.myMap(cb));

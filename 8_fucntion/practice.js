@@ -34,5 +34,4 @@ const user={
     }
 }
 
-
 user.greet();

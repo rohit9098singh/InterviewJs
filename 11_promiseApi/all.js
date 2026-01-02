@@ -24,22 +24,6 @@ Promise.all([p1, p2, p3])
   });
 
 
-function promise1(){
-  return new Promise((res,rej)=>{
-      setTimeout(()=>{
-        const user={name:"Rohit ",age:24}
-        res(user);
-      },2000)
-  })
-}
-
-const p6=new Promise((res,rej)=>{
-  setTimeout(()=>{
-    console.log("p1 success");
-    res
-  })
-})
-
 
 
 // success jo hai vo 3 sec ke baadh he aata hai sab ka wait karta hai

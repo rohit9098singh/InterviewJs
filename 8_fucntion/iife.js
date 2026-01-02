@@ -33,6 +33,7 @@ function App() {
     })();
   }, []); // Empty dependency array means this runs once on mount
 
+  
   return (
     <div>
       <h1>API Data:</h1>

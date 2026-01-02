@@ -1,5 +1,5 @@
 // Currying is a process in JavaScript where a function with multiple
-// arguments is transformed into a sequence of functions that each take a single argument.
+// Arguments is transformed into a sequence of functions that each take a single argument.
 
 // let multiply=function(x,y){
 //     console.log(x*y);
@@ -24,7 +24,6 @@
 // for(let i=1;i<10;i++){
 //     console.log(`2 * ${i} =${multiply2(i)}`)
 // }
-
 
 function Base(value1){
   return function(value2){

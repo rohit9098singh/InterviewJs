@@ -1,7 +1,6 @@
 let result = 0 / 0;
 console.log(result); // NaN
 
-
 let result2 = parseInt("abc");
 console.log(result2); // NaN
 
@@ -18,4 +17,8 @@ console.log(result5); // NaN
 let res=10 + {}
 console.log(res)
 
+
+result=0/0
+parseInt("abc")
+undefined+5
 

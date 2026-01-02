@@ -10,7 +10,6 @@
 
 // console.log('D');
 
-
 // // second question
 
 // async function foo() {
@@ -28,4 +27,5 @@ async function test() {
 test().then(console.log); // You're passing the function reference, not calling it
 
 console.log("After test()");
+
 
