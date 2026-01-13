@@ -50,21 +50,21 @@ test();
 // console.log(window.z); // ? //  undefined
 
 
-// let a = 1;  //scrit scope
+let a = 1;  //scrit scope
 
-// function outer() {
-//   let a = 2;  // global scope
+function outer() {
+  let a = 2;  // global scope
 
-//   if (true) {
-//     let a = 3;  // global scope
-//     console.log(a); // ?  // 3
-//   }
+  if (true) {
+    let a = 3;  // global scope
+    console.log(a); // ?  // 3
+  }
 
-//   console.log(a); // ?  //2
-// }
+  console.log(a); // ?  //2
+}
 
-// console.log(a); // ? // 1
-// outer();
+console.log(a); // ? // 1
+outer();
 
 
 // let num = 100;  // global script scope 

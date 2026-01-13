@@ -42,3 +42,39 @@
 //   .catch((e) => console.log("Caught error:", e));
 
 
+
+function fetchUser(){
+    return new Promise((res,rej)=>{
+        setTimeout(() => {
+             const user={name:'Rohit',age:"23"} 
+             res(user)
+        }, 1000);
+    })
+}
+
+function getName(user){
+    return new Promise((res,rej)=>{
+      setTimeout(() => {
+        const name=user.name
+        res(name)
+      }, 2000);
+    })
+}
+
+function greeting(name){
+    return new Promise((res,rej)=>{
+        setTimeout(() => {
+            const greeting=`hello ${name}`
+            res(greeting);
+        }, timeout);
+    })
+}
+
+const callAllPromise=async ()=>{
+    const user= await fetchUser();
+    const name=await getName(user);
+    const greting=await greeting(name);
+    return greting;
+}
+
+callAllPromise().then((res)=>console.log(res)).catch((err)=>console.log(err))

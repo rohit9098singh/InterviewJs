@@ -107,7 +107,7 @@ function z() {
         var a = 7;
 
         function y() {
-            console.log(a, b); // Accesses both a and b via closure
+            console.log("i guess the value of a has been modified at here",a, b); // Accesses both a and b via closure
         }
         a = 2000;
         y();

@@ -12,7 +12,6 @@ console.log(modifiedArr);
 const myArray = ["apple", "banana", "cherry"];
 const capitalisedArray = (arr) => arr.map(value => value.toUpperCase());
 
-
 console.log("capitalized :",capitalisedArray(myArray))
 
 

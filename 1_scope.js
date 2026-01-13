@@ -1,14 +1,14 @@
-// function a(){
-//     b();
-//    function b(){
-//     c();
-//      function c(){
-//        console.log("value ",x)
-//      }
-//    }
-// }
-// var x=10;
-// a();
+function a(){
+    b();
+   function b(){
+    c();
+     function c(){
+       console.log("value ",x)
+     }
+   }
+}
+var x=10;
+a();
 
 // function a(){
 //     b();

@@ -81,10 +81,13 @@ const task3=()=>{
     })
 }
 
-async function runInParallel(){
-    console.time("Parallel");
-    const [r1,r2,r3]=await Promise.all([task1(),task2(),task3()]);
-    console.log(r1,r2,r3)
-    console.timeEnd("Parallel")
-}
-runInParallel();
+
+Promise.all([task1(),task2(),task3()]).then((res)=>{console.log(res)}).catch((err)=>console.log(err))
+
+// async function runInParallel(){
+//     console.time("Parallel");
+//     const [r1,r2,r3]=await Promise.all([task1(),task2(),task3()]);
+//     console.log(r1,r2,r3)
+//     console.timeEnd("Parallel")
+// }
+// runInParallel();
