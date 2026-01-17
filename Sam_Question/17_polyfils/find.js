@@ -20,16 +20,16 @@
 
 const arr = [1, 2, 3, 4, 5];
 
-Array.prototype.myFind = function (cb) {
-    for (let i = 0; i < this.length; i++) {
-        if (cb(this[i])) {
-            return this[i];
-        }
-    }
-};
+// Array.prototype.myFind = function (cb) {
+//     for (let i = 0; i < this.length; i++) {
+//         if (cb(this[i])) {
+//             return this[i];
+//         }
+//     }
+// };
 
-function cb(incoming) {
-    return incoming > 3;
-}
+// function cb(incoming) {
+//     return incoming > 3;
+// }
 
-console.log(arr.myFind(cb)); // 4
+// console.log(arr.myFind(cb)); // 4

@@ -1,8 +1,7 @@
 const GITHUB_API = "https://api.github.com/users/akshaymarch7"
 
-const user = fetch(GITHUB_API);
+const user = fetch(GITHUB_API)
 
-console.log(user)
 
 // jab iska output dekhoge to ek sochne walle bath samne aayege ke ye ek object hoga jo top me pnding show kar raha hoga but jab vo object ko open kiya jayega to vo full field dikhayga but how and why 
 
@@ -13,15 +12,18 @@ console.log(user)
 // });
 
 
-fetch(GITHUB_API)
-  .then(function (response) {
-    return response.json(); // ✅ parse JSON
-  })
-  .then(function (data) {
-    console.log(data); // ✅ actual data here
-  })
-  .catch(function (error) {
-    console.error("Error fetching data:", error);
-  });
+// fetch(GITHUB_API)
+//   .then(function (response) {
+//     return response.json(); // ✅ parse JSON
+//   })
+//   .then(function (data) {
+//     console.log(data); // ✅ actual data here
+//   })
+//   .catch(function (error) {
+//     console.error("Error fetching data:", error);
+//   });
 
- 
+function Student(){
+this.name = "Saikrishna",
+this.exp= "8"
+}

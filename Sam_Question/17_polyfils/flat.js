@@ -18,3 +18,6 @@ const nestedArray2 = [1, [2, [3, 4], [7, 5]], 6];
 const flattenedArray2 = nestedArray2.flat(Infinity);
 
 console.log(flattenedArray2);
+
+
+
