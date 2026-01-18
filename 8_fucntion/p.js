@@ -14,4 +14,3 @@ dog.bark=function(){
 dog.makeSound();
 dog.bark();
 
-

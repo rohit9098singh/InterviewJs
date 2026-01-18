@@ -26,7 +26,6 @@ function step4(cb) {
   }, 500);
 }
 
-
 step1(() => {
   step2(() => {
     step3(() => {
