@@ -9,9 +9,9 @@
 // Output: []
 // length = 0 clears the array.
 
-// let arr = [1, 2, 3];
-// arr.length = 5;
-// console.log(arr);
+let arr = [1, 2, 3];
+arr.length = 5;
+console.log(arr);
 
 // let arr = [1, 2, 3];
 // console.log(typeof arr);
@@ -30,9 +30,9 @@ console.log(JSON.stringify([1, 2]) == JSON.stringify([1, 2]));  // true
 // Output: 4
 
 
-let arr = [1, 2, 3];
-console.log(arr.slice(1, 2));
-console.log("slice value is what at here jsut check it out here ",arr)
+// let arr = [1, 2, 3];
+// console.log(arr.slice(1, 2));
+// console.log("slice value is what at here jsut check it out here ",arr)
 
 // splice() nikale gaye elements ka array return karta hai.
 // let arr = [1, 2, 3];

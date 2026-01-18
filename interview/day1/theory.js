@@ -2,13 +2,16 @@
 // Answer:
 
 // Code Splitting & Lazy Loading:
-// JavaScript ko chhote-chhote parts mein tod do, aur jo features abhi nahi chahiye unko baad mein load karo. Jaise React mein dynamic imports use kar sakte hain. Isse initial load fast hota hai.
+// JavaScript ko chhote-chhote parts mein tod do, aur jo features abhi nahi chahiye unko baad mein load karo. 
+// Jaise React mein dynamic imports use kar sakte hain. 
+// Isse initial load fast hota hai.
 
 // Debounce aur Throttle use karo:
 // User input events jaise scroll, resize, ya typing mein debounce/throttle lagao, taaki unnecessary function calls na ho aur CPU par load kam pade.
 
 // Minification aur Compression:
-// JavaScript files ko minify karo (whitespace aur comments remove karo) aur server pe gzip ya brotli compression enable karo. Yeh file size kam karta hai, toh loading jaldi hoti hai.
+// JavaScript files ko minify karo (whitespace aur comments remove karo) aur server pe gzip ya brotli compression enable karo.
+//  Yeh file size kam karta hai, toh loading jaldi hoti hai.
 
 // Avoid Memory Leaks:
 // Unused variables, event listeners, aur timers ko clean karo. Browser ki memory usage agar zyada hogi, toh app slow ho jayega.

@@ -80,32 +80,32 @@ console.log("Outside");
 
 //============================================
 
-async function test() {
-  try {
-    await Promise.reject("Fail");
-  } catch (e) {
-    console.log("Caught:", e);
-  }
-}
-test();
+// async function test() {
+//   try {
+//     await Promise.reject("Fail");
+//   } catch (e) {
+//     console.log("Caught:", e);
+//   }
+// }
+// test();
 
 
 //============================================
 
-Promise.all([
-  Promise.resolve(1),
-  Promise.reject("Error"),
-  Promise.resolve(3),
-])
-  .then((res) => console.log("Then:", res))
-  .catch((e) => console.log("Catch:", e));
+// Promise.all([
+//   Promise.resolve(1),
+//   Promise.reject("Error"),
+//   Promise.resolve(3),
+// ])
+//   .then((res) => console.log("Then:", res))
+//   .catch((e) => console.log("Catch:", e));
 
 //============================================
 
-  Promise.resolve(5)
-  .then((num) => {
-    return new Promise((res) => {
-      setTimeout(() => res(num * 2), 5000);
-    });
-  })
-  .then(console.log);
+  // Promise.resolve(5)
+  // .then((num) => {
+  //   return new Promise((res) => {
+  //     setTimeout(() => res(num * 2), 5000);
+  //   });
+  // })
+  // .then(console.log);

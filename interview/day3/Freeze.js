@@ -1,7 +1,7 @@
-// const user = {
-//   id: 101,
-//   name: "Rohit"
-// };
+const user = {
+  id: 101,
+  name: "Rohit"
+};
 
 // Object.defineProperty(user, 'id', {
 //   writable: false,       
@@ -53,10 +53,10 @@ function abc(){
 const value=new abc();
 
 
-let user={
-    name:"hello",
-    age:29
-}
+// let user={
+//     name:"hello",
+//     age:29
+// }
 
 const {name,age}=user;
 console.log(name,user)

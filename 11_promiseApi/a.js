@@ -1,14 +1,14 @@
 // let str="hello\nworld";
-// // console.log(str)
-// let str="hello world welcome to my channel story";
+// console.log(str)
+let str="hello world welcome to my channel story";
 
-// function breakStr(str){
-//     let string=str.split(" ");
-//     for(let i=0;i<string.length;i++){
-//          console.log(string[i]);
-//     }
-// }
-// breakStr(str);
+function breakStr(str){
+    let string=str.split(" ");
+    for(let i=0;i<string.length;i++){
+         console.log(string[i]);
+    }
+}
+breakStr(str);
 
 
 // const arr=[1,2,3,4,5,6,7];
