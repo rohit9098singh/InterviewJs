@@ -17,20 +17,19 @@ std2.exp = "10"; // Override instance property
 console.log(std1.company);
 console.log(std2);
 
-
-
-
 let package={
     version:"2.0"
 }
 
 let application=Object.create(package,{
     name:{value:"game"}
-})               
+})    
+
+
 console.log(application.version);
 
-console.log("check wherther it is equal or not ",Object.getPrototypeOf(application)=== package)
 
+console.log("check wherther it is equal or not ",Object.getPrototypeOf(application)=== package)
 
 
 const animal={
