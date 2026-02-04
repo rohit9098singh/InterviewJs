@@ -12,18 +12,18 @@
 
 //: Given the following function, identify any bugs or issues in it, and explain how to fix it:
 
-// function processData(data) {
-//   try {
-//     const result = JSON.parse(data);
-//     if (result.error) {
-//       throw new Error(result.error);
-//     }
-//     return result;
-//   } catch (e) {
-//     console.error("Error parsing data", e);
-//     return null;
-//   }
-// }
+function processData(data) {
+  try {
+    const result = JSON.parse(data);
+    if (result.error) {
+      throw new Error(result.error);
+    }
+    return result;
+  } catch (e) {
+    console.error("Error parsing data", e);
+    return null;
+  }
+}
 
 
 // If result.error exists but is falsy (like an empty string "" or 0), your check:

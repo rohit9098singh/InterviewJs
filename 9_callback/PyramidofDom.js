@@ -26,14 +26,24 @@ function step4(cb) {
   }, 500);
 }
 
+// step1(() => {
+//   step2(() => {
+//     step3(() => {
+//       step4(() => {
+//         console.log("All steps done!");
+//       });
+//     });
+//   });
+// });
+
 step1(() => {
   step2(() => {
     step3(() => {
-      step4(() => {
-        console.log("All steps done!");
-      });
-    });
-  });
-});
+      step4(()=>{
+        console.log("all steps are done at here")
+      })
+    })
+  })
+})
 
 

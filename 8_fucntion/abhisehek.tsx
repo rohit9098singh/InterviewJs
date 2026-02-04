@@ -49,7 +49,7 @@ export default function App() {
   const [url, setUrl] = useState("https://jsonplaceholder.typicode.com/posts/1");
   const { data, loading, error } = useFetch(url);
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <div> loading</div>;
   if (error) return <p>Error: {error.message}</p>;
 
   return (
