@@ -22,14 +22,7 @@ const arr=[1,2,3,4,5];
 const res=arr.reduce(num=>num=2)
 console.log("hello world",res)
 
-// function check(){
-//   throw new Error(" params is required")
-// }
-// function show(name=check()){
-//   console.log(name)
-// }
 
-// console.log(show("tijdje"))
 
 function check(){
    throw new Error("this is the valid input you need to provide a valid output at here ")

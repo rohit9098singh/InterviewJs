@@ -6,89 +6,60 @@
 //  and store them in data structure like array or objects
 
 // 1) passing as an argument 
-// const cb = () => {
-//     console.log("hello buddy here i am ");
-// }
+const cb = () => {
+    console.log("hello buddy here i am ");
+}
 
-// function hello(cb) {
-//     return cb; 
-// }
+function hello(cb) {
+    return cb; 
+}
 
-// const cbRef = hello(cb); 
-// cbRef(); 
+const cbRef = hello(cb); 
+cbRef(); 
 
 
 // //2) assigning it to some other variable 
-// const a =function(){
-//     console.log("hello world ");
-// }
-// a();
+const a =function(){
+    console.log("hello world ");
+}
+a();
 
 // //3) returned from another fucntion
-// function hello(){
-//     let a=10;
-//     function b(){
-//         console.log(a);
-//     }
-//     return b;
-// }
+function hello(){
+    let a=10;
+    function b(){
+        console.log(a);
+    }
+    return b;
+}
 
-// const bRef=hello();
-// bRef();
+const bRef=hello();
+bRef();
 
 
 // //4) store then in data structure called array
-// const sayHello = () => console.log("Hello");
-// const sayHi = () => console.log("Hi");
-// const sayBye = () => console.log("Bye");
+const sayHello = () => console.log("Hello");
+const sayHi = () => console.log("Hi");
+const sayBye = () => console.log("Bye");
 
-// const greetings = [sayHello, sayHi, sayBye];
+const greetings = [sayHello, sayHi, sayBye];
 
-// greetings[0](); // Hello
-// greetings[1](); // Hi
-// greetings[2](); // Bye
-
-
-// function base(a){
-//     return function (b){
-//         return a*b;
-//     }
-// }
-
-// function cb2(){
-//   console.log("hello wrold ")
-// }
-// function base(cb2){
-//    cb2()
-// }
-
-// base(cb2);
+greetings[0](); // Hello
+greetings[1](); // Hi
+greetings[2](); // Bye
 
 
-
-
-function higgherOrder(){
-    console.log("i am a higher order fucntion")
-}
-
-function takesArgs(cb){
-    cb();
-}
-
-higgherOrder(takesArgs)
-
-function check(){
-    return function(){
-        console.log("inner fucntiomn")
+function base(a){
+    return function (b){
+        return a*b;
     }
 }
-const ref=check();
-ref();
 
-const hello=()=>{console.log("tor mai ke chodo")}
-const bye=()=>{}
-const challo=()=>{}
+function cb2(){
+  console.log("hello wrold ")
+}
+function base(cb2){
+   cb2()
+}
 
-const result=[hello,bye,challo];
-
-result[0]()
+base(cb2);

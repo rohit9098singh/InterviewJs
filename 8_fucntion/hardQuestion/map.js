@@ -27,29 +27,17 @@ function printName(thirdparams){
 
 printName.call(student1,"hello")
 
-// let package = {
-//  version: "2.0",
-// };
-// let application = Object.create(package, {
-//  name: { value: "game" },
-// }); // inherited from package
+let package = {
+ version: "2.0",
+};
+let application = Object.create(package, {
+ name: { value: "game" },
+}); // inherited from package
 
-// console.log(application.name);
-// console.log("check wheather it is equal or not",Object.getPrototypeOf(application)===package);
-
-
+console.log(application.name);
+console.log("check wheather it is equal or not",Object.getPrototypeOf(application)===package);
 
 
-let package={
-    version:"2.0"
-}
-
-let application=Object.create(package,{
-    name:{value:"game"}
-})               
-console.log(application.version);
-
-console.log("check wherther it is equal or not ",Object.getPrototypeOf(application)=== package)
 
 let a = 3;
 let b = new Number(3);
