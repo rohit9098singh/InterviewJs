@@ -1,6 +1,6 @@
 const arr=[1,2,3,4,5,6,7,8];
 
-// arr.reduce((acc,curr)=>{},0)
+arr.reduce((acc,curr)=>{},0)
 
 Array.prototype.myReduce=function(cb,initialValue){
     let index=0;

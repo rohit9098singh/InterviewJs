@@ -26,3 +26,15 @@ const student2 = {
 //  Since wrapper is a regular function and is invoked as a method of the object, its this refers to the object (student2). 
 // Therefore, the arrow function inherits this from wrapper, and is able to access this.name correctly.
 student2.wrapper(); // ✅ hello rohit welcome today for the interview
+
+
+function test() {
+  try {
+    return 1
+  } finally {
+    return 2
+  }
+}
+
+console.log(test()); // 2
+// return inside the finally override the previous return so output is 2 insted of 1

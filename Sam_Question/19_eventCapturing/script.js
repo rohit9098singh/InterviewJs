@@ -12,7 +12,6 @@ document.getElementById("btn").addEventListener("click", function () {
 }, true); // 👈 capturing
 
 
-
 // this is for evnt bubbling
 document.getElementById("outer").addEventListener("click", () => {
   console.log("Outer div cliked")
@@ -25,5 +24,5 @@ document.getElementById("btn").addEventListener("click", () => {
 }, false)
 
 // output :  Outer Div Clicked
-//             Inner Div Clicked
-//             Button Clicked
+//           Inner Div Clicked
+//           Button Clicked

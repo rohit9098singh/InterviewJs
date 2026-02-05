@@ -4,8 +4,6 @@ console.log(args)
 Example(1,2,3,4);
 
 
-
-
 function restOperator(firstObj,...restObject){
     const res= restObject.reduce((acc,curr)=>({...acc,...curr}),{...firstObj})
     console.log(res)
@@ -45,4 +43,10 @@ console.log("rest of the data at here ",rest);
 // function test(...rest) {
 //   let rest = [1, 2]; // ❌ SyntaxError
 // }
+
+function test(...rest) {
+  rest = [1, 2]; // ✔ allowed
+}
+
+test(3,7,8)
 

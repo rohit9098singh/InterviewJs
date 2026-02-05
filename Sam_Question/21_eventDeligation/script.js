@@ -11,3 +11,4 @@ document.getElementById("menu").addEventListener("click", function(e) {
     console.log("Clicked:", e.target.textContent);
   }
 });
+

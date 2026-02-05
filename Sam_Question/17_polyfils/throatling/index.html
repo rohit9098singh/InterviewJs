@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,7 +11,7 @@
     <script>
         // The function we want to throttle
         const expensiveFunction = (event) => {
-            console.log(`Window resized to: ${window.innerWidth}x${window.innerHeight} at`, new Date().toLocaleTimeString());
+            console.log(`Window resized to: ${window.innerWidth}x${window.innerHeight} at ${event}`, new Date().toLocaleTimeString());
         };
 
         // Throttle function
@@ -35,4 +35,43 @@
         window.addEventListener("resize", betterFunction);
     </script>
 </body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Resize the window to see the magic at here </h1>
+    <script>
+        function heavyOpeartion() {
+            return console.log(`width:${window.innerWidth} height:${window.innerHeight} `,new Date().toLocaleTimeString()) 
+        }
+
+        function doSomeThrottle(fn, delay) {
+            let flag = true;
+            return function (...args) {
+                if (flag) {
+                    fn.apply(this, args)
+                    flag = false;
+                    setTimeout(() => {
+                        flag = true
+                    }, delay);
+
+                }
+            }
+        }
+
+        const betterFunction = doSomeThrottle(heavyOpeartion, 1000)
+
+        window.addEventListener("resize",betterFunction)
+    </script>
+</body>
+
 </html>
