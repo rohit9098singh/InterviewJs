@@ -49,7 +49,7 @@ test();
 function outer(){
     console.log( inner());
     function inner(){
-        return " i am inner"
+        return " i am inner function return statement"
     }
 }
 

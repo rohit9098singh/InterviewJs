@@ -1,6 +1,6 @@
-console.log(a)
-console.log(b)
-var a = b = 5;
+// console.log(a)
+// console.log(b)
+// var a = b = 5;
 
 const func1 = (val) => {
     console.log(this.name , val)
@@ -18,12 +18,14 @@ const user = {
 }
 
 user.sex="male"
-console.log(user);
+console.log("is this getting undefined",user);
 
 
 Object.defineProperty(user,"id",{
     writable:false,
 })
+
+
 
 user.id=1234
 console.log(user.id)

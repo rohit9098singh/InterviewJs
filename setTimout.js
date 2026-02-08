@@ -20,6 +20,16 @@
 //     })(i)
 // }
 
+for(var i=0;i<5;i++){
+  ( function(i){
+     setTimeout(()=>{
+       console.log(i)
+    },i*1000)
+   })(i)
+}
+
+
+
 // function x(){
 //    for(let i=0;i<5;i++){
 //         setTimeout(()=>{
@@ -85,8 +95,8 @@
 //     },i*1000,i)
 // }
 
-for(var i=0;i<5;i++){
-    setTimeout(()=>{
-        console.log(i)
-    },1000*i)
-}
+// for(var i=0;i<5;i++){
+//     setTimeout(()=>{
+//         console.log(i)
+//     },1000*i)
+// }

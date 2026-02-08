@@ -15,3 +15,5 @@ Function.prototype.MyCall = function(obj, ...args) {
 };
 
 printfullName.MyCall(name, "hello", "world", "first");
+
+
