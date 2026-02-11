@@ -13,9 +13,17 @@ const arr2 = [1, 2, 3, 4, 5];
 const result2 = arr2.filter(num => num !== 3);
 
 console.log("help",result2);
-// Output: [1, 2, 3, 4, 5]
 
 // 0, null, undefined, false, NaN, "" → falsy
+
+
+if([]){
+    console.log("hello")
+}
+
+
+
+// study this when you read call aply and bind method
 
 let student1={
     firstName:"rohit",
@@ -26,6 +34,7 @@ function printName(thirdparams){
 }
 
 printName.call(student1,"hello")
+
 
 let package = {
  version: "2.0",

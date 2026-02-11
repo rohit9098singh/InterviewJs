@@ -22,3 +22,8 @@ result=0/0
 parseInt("abc")
 undefined+5
 
+console.log(0/0);
+console.log(parseInt("ABC"));
+console.log(undefined +5) 
+
+

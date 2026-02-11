@@ -15,7 +15,7 @@ let student2 = {
 
 
 // bina optional chaining:
-// console.log("this is the working of the comodity right now at here ",student2.address.city); 
+// console.log("this is the working of the comodity right now at here ",student2?.address?.city); 
 // ❌ Error: Cannot read properties of undefine
 
 const arr=[1,2,3,4,5];

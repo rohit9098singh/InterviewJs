@@ -3,7 +3,7 @@
 // we can pass it to a fucntion as a an argiment 
 // we can retuen it from the fucntion 
 // asin it an other valrible
-//  and store them in data structure like array or objects
+// and store them in data structure like array or objects
 
 // 1) passing as an argument 
 const cb = () => {
