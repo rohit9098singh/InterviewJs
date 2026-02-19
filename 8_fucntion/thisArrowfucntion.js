@@ -59,3 +59,6 @@ obj.greet();
 
 // 🟢 Arrow function (in setTimeout)
 // this decide hota hai creation time par → surrounding scope ka this capture karke lock kar leta hai
+
+
+console.log(null == undefined)

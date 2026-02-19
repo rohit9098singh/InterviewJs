@@ -28,3 +28,9 @@ console.log(ws.has(obj1)); // true
 
 // obj1 = null → garbage collected automatically
 
+
+const abc= ()=>{
+    console.log(this.name)
+}
+
+abc.call({name:"sankalp"})
