@@ -2,11 +2,11 @@
 // console.log(b)
 // var a = b = 5;
 
-const func1 = (val) => {
-    console.log(this.name , val)
-}
+// const func1 = (val) => {
+//     console.log(this.name , val)
+// }
 
-func1.call({ name: "Abhishek" } , "abhishek")
+// func1.call({ name: "Abhishek" } , "abhishek")
 
 const user = {
     id: 123,

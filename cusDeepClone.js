@@ -1,59 +1,32 @@
-// function deepClone(obj) {
-//   if (obj === null || typeof obj !== "object") {
-//     return obj; // primitive value return as it is
-//   }
-
-//   // Agar array hai to map() use karo
-//   if (Array.isArray(obj)) {
-//     return obj.map(item => deepClone(item));
-//   }
-
-//   // Agar object hai to for..in use karo
-//   const newObject = {};
-//   for (let key in obj) {
-//     if (obj.hasOwnProperty(key)) {
-//       newObject[key] = deepClone(obj[key]);
-//     }
-//   }
-//   return newObject;
-// }
-
-// // Example
-// const data = {
-//   name: "Rohit",
-//   skills: ["JS", "C++", { lang: "Python" }]
-// };
-
-// const copy = deepClone(data);
-// console.log(copy);
-// console.log(copy.skills[2] === data.skills[2]); // false (different reference)
-
-
-const customDeepClone = (obj) => {
+function deepClone(obj) {
   if (obj === null || typeof obj !== "object") {
-    return obj;
+    return obj; // primitive value return as it is
   }
 
+  // Agar array hai to map() use karo
   if (Array.isArray(obj)) {
-    return obj.map(item => customDeepClone(item));
+    return obj.map(item => deepClone(item));
   }
 
-  let newObj = {};
+  // Agar object hai to for..in use karo
+  const newObject = {};
   for (let key in obj) {
-    if (Object.prototype.hasOwnProperty.call(obj, key)) {
-      newObj[key] = customDeepClone(obj[key]);
+    if (obj.hasOwnProperty(key)) {
+      newObject[key] = deepClone(obj[key]);
     }
   }
-  return newObj;
-};
-
-
-const data={
-  name:'Rohit',
-  skills:["js","c++",{lang:"Python"}]
+  return newObject;
 }
 
-const copy=customDeepClone(data);
-console.log("check what are we getting at here ",copy.skills[2].lang="herool")
-console.log(copy)
-console.log(data)
+// Example
+const data = {
+  name: "Rohit",
+  skills: ["JS", "C++", { lang: "Python" }]
+};
+
+const copy = deepClone(data);
+console.log(copy);
+console.log(copy.skills[2] === data.skills[2]); // false (different reference)
+
+
+

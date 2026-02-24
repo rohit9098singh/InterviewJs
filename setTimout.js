@@ -4,19 +4,27 @@
 //     },i*1000)
 // }
 
+for (var i = 0; i < 5; i++) {
+
+    setTimeout((i) => {
+        console.log(i)
+    }, 1000 * i,i)
+}
+
+
 //========================= with let ====================
-for(let i=0;i<5;i++){
-    setTimeout(()=>{
-       console.log(i)
-    },i*1000)
+for (let i = 0; i < 5; i++) {
+    setTimeout(() => {
+        console.log(i)
+    }, i * 1000)
 }
 
 //======================= with iffe ======================
-for(var i=0;i<5;i++){
-    (function(i){
+for (var i = 0; i < 5; i++) {
+    (function (i) {
         setTimeout(() => {
             console.log(i)
-        }, i*1000);
+        }, i * 1000);
     })(i)
 }
 

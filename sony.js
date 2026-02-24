@@ -1,23 +1,25 @@
-// const arr=[1,2,[3,4]]
+const arr=[1,2,[3,4]]
 
-// const shallowCopy=[...arr];
+const shallowCopy=[...arr];
 
-// shallowCopy[2][0]=100;
+shallowCopy[2][0]=100;
 
-// console.log(arr);
-// console.log(shallowCopy)
+console.log(arr);
+console.log(shallowCopy)
 
-// const deepCopy=structuredClone(arr);
-// deepCopy[2][0]=200;
+const deepCopy=structuredClone(arr);
+deepCopy[2][0]=200;
+
+console.log("deep-cloned",deepCopy)
 
 // // or
 
-// const deepCopy2=JSON.parse(JSON.stringify(arr));
-// deepCopy2[2][1]=393939;
+const deepCopy2=JSON.parse(JSON.stringify(arr));
+deepCopy2[2][1]=393939;
 
-// console.log(arr)
-// console.log(deepCopy)
-// console.log(deepCopy2)
+console.log(arr)
+console.log(deepCopy)
+console.log(deepCopy2)
 
 // // range error
 

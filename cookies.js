@@ -1,5 +1,6 @@
-// Cookies are small pieces of textual data stored in the user's browser by the website they visit.
- // They are used to store information about the user such as login state, preferences, or tracking data, so that the website can remember the user across different sessions or visits.
+ // Cookies are small pieces of textual data stored in the user's browser by the website they visit.
+ // They are used to store information about the user such as login state, preferences, or tracking data, 
+ // so that the website can remember the user across different sessions or visits.
 
 
 //  Stored as key-value pairs

@@ -30,4 +30,3 @@ delay(2000);  // 2 sec delay
 console.log("End after 2 sec");
 
 
-   

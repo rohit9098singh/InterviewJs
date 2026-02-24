@@ -7,16 +7,16 @@
 //     console.log("hello rohit")
 // }
 
-function x(){
-  for (var index = 0; index <5; index++) {
-    (function close(index){
-      setTimeout(() => {
-         console.log(index)
-      }, 1000*index);
-    })(index)
-  }
-}
-x(); 
+// function x(){
+//   for (var index = 0; index <5; index++) {
+//     (function close(index){
+//       setTimeout(() => {
+//          console.log(index)
+//       }, 1000*index);
+//     })(index)
+//   }
+// }
+// x(); 
 
 // hello rohit 6 6 6 6 6 6 behave this way because closuere remeber the reference of i not the value of i
 

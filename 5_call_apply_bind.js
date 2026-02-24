@@ -51,17 +51,38 @@
 
 
 
-let name1={
+// let name1={
+//     firstName:"Rohit",
+//     lastName:"singh"
+// }
+// let name2={
+//     firstName:"sumit",
+//     lastName:"kumar"
+// }
+
+// let printFullName=function(thirdParameter){
+//   console.log(this.firstName,this.lastName,thirdParameter)
+// }
+
+// printFullName.call(name1,"welcome here ")
+
+let user1={
     firstName:"Rohit",
     lastName:"singh"
 }
-let name2={
-    firstName:"sumit",
-    lastName:"kumar"
+
+let user2={
+    firstName:"Aman",
+    lastName:"Kuamr",
 }
 
-let printFullName=function(thirdParameter){
-  console.log(this.firstName,this.lastName,thirdParameter)
+function printName(thirdParameter){
+       console.log(`${this.firstName} + ${this.lastName} + ${thirdParameter}`)
 }
 
-printFullName.call(name1,"welcome here ")
+printName.call(user1,"mumbai")
+
+printName.apply(user2,["check here"])
+
+const res=printName.bind(user2,"mumbai");
+res()
