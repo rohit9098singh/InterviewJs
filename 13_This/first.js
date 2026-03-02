@@ -1,4 +1,4 @@
-"use strict"
+// "use strict"
 
 //======================== this in global space=====================
 console.log(this) //==> global object = window,global
@@ -8,20 +8,20 @@ function x(){
     console.log(this)
 }
 x()// => undefined when in strict mode  non-strict walle me vo window hoga kyu us waqt this substitution follow hoga or vo global object se replace hojayega thik 
-window.x()  // global window object
+// window.x()  // global window object
 
 //=========================== inside the object =============================
 
 const obj={
     a:10,
-    x:function(){
-        console.log(this)
+    x:function(name){
+        console.log(this.name)
     },
     y:()=>{
         console.log(this.a)
     }
 }
-obj.x();  // the value this in object becomes the object itself inside which it is getting called at there 
+obj.x("rohit");  // the value this in object becomes the object itself inside which it is getting called at there 
 
 // ================================= call apply and bind method ===================================
 

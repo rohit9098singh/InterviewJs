@@ -1,23 +1,29 @@
 // the main functionlaity of the symbol is to 
 // generate a unique values even if the description is same 
 
-const s1=Symbol("id");
-const s2=Symbol("id");
+// let a=Symbol(20);
+// let b=Symbol(20);
 
-console.log(s1==s2)
-console.log(s1=== s2)
+// console.log(a=b)
 
-// symbol ke property loop me nhi aate hai 
 
-const secret=Symbol("secret");
-const obj = {
-  name: "Admin",
-  [secret]: "12345"
-};
+// const s1=Symbol("id");
+// const s2=Symbol("id");
 
-for (let key in obj) {
-  console.log(key);
-}
+// console.log(s1==s2)
+// console.log(s1=== s2)
+
+// // symbol ke property loop me nhi aate hai 
+
+// const secret=Symbol("secret");
+// const obj = {
+//   name: "Admin",
+//   [secret]: "12345"
+// };
+
+// for (let key in obj) {
+//   console.log(key);
+// }
 
 //symbol key directly print nhi kar sakte hai 
 const s = Symbol("test");

@@ -1,23 +1,27 @@
-// A closure is created when a function is defined inside another function, and the inner function remembers the variables from the outer function — even after the outer function has finished running.
-// This happens because JavaScript uses lexical scoping, which allows the inner function to "close over" or keep a reference to the outer function’s variables.
+// A closure is created when a function is defined inside another function, 
+// and the inner function remembers the variables from the outer function — 
+// even after the outer function has finished running.
+// This happens because JavaScript uses lexical scoping, which allows the inner function 
+// to "close over" or keep a reference to the outer function’s variables.
 // Since the inner function can still access those variables, they are not removed by the garbage collector.
 // This ability of remembering and using the outer function’s variables is what we call a closure.
-// Just like they remember the variables, inner functions can also access outer functions (if they're defined as variables or function declarations).
+// Just like they remember the variables, inner functions can also access outer functions
+//  (if they're defined as variables or function declarations).
 
-// function outer() {
-//     function greet() {
-//         return "Hello";
-//     }
+function outer() {
+    function greet() {
+        return "Hello";
+    }
 
-//     function inner() {
-//         console.log(greet()); // Accessing outer function
-//     }
+    function inner() {
+        console.log(greet()); // Accessing outer function
+    }
 
-//     return inner;
-// }
+    return inner;
+}
 
-// const sayHello = outer();
-// sayHello(); // Hello
+const sayHello = outer();
+sayHello(); // Hello
 
 
 
@@ -58,13 +62,13 @@
 //     let a = 10;
 //     return {
 //         hello: function (amount) {
-//             return "hello world";  //  returning the string instead of logging it
+//             return` hello world ${amount}`;  //  returning the string instead of logging it
 //         }
 //     }
 // }
 
 // const yes = x();
-// console.log(yes.hello());  // prints: hello world
+// console.log(yes.hello(20));  // prints: hello world
 // console.log(yes.a)  // undefined
 
 
@@ -120,7 +124,7 @@ function z() {
 z();
 
 var c = z();    // c now holds function y?
-console.log(c); 
+console.log("what about this c value at here ",c); 
 // c();  
             //  Calls y() — prints
 

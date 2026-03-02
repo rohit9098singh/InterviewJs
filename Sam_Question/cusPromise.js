@@ -19,6 +19,7 @@ const customPromiseAll = (promises) => {
   });
 };
 
+
 // Example 1: All Promises succeed
 const p1 = Promise.resolve(1);
 const p2 = 42;

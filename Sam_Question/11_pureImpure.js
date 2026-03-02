@@ -6,14 +6,15 @@
 
 // impure 
 
-// let count=0;
+let count=0;
 
-// function incementCount(){
-//     console.log("at here ",++count)
-// }
-// incementCount()
-// incementCount()
-// incementCount()
+function incementCount(){
+    console.log("at here ",++count)
+}
+incementCount()
+incementCount()
+incementCount()
+
 
 
 
@@ -39,3 +40,6 @@ console.log("final result at here ",check(a,10))
 
 // console.log(increment()); // 1
 // console.log(increment()); // 2
+
+
+

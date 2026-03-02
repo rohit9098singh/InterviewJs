@@ -86,3 +86,6 @@ printName.apply(user2,["check here"])
 
 const res=printName.bind(user2,"mumbai");
 res()
+
+
+// call apply and bind are the three types of fucntion which executes imediately with the given this value

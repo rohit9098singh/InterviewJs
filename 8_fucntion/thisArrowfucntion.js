@@ -1,3 +1,6 @@
+// 1st point => normal fucntion jo hai uska this call time pe na ke definitaion time pe
+// 2nd pont=> arrow functuin khud ka this nhi hota islie vo creation time pe parent se inherit kar leta hai 
+
 const obj1 = {
   name: 'Rohit',
   greet: function() {

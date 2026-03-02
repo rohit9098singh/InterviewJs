@@ -10,17 +10,17 @@
 // var x=10;
 // a();
 
-// // function a(){
-// //     b();
-// //    function b(){
-// //     c();
-// //      function c(){
-// //        console.log("value ",x)
-// //      }
-// //    }
-// // }
-// // a();
-// // var x=10;
+// function a(){
+//     b();
+//    function b(){
+//     c();
+//      function c(){
+//        console.log("value ",x)
+//      }
+//    }
+// }
+// a();
+// var x=10;
 
 
 // function a(){
@@ -50,17 +50,16 @@
 
 // 
 
-// function a(){
-//    function b(){
-//      function c(){
-//        console.log("value ",x)
-//      }
-//    }
-// }
+function a(){
+   function b(){
+     function c(){
+       console.log("value ",x)
+     }
+   }
+}
 
-// var x=10;
-// a();
-
+var x=10;
+a();
 
 // let a=20;
 

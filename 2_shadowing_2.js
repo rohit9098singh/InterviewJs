@@ -1,21 +1,17 @@
-function greet(){
-    console.log("hello world ")
-}
+// function greet(){
+//     console.log("hello world ")
+// }
 
-function greet2(){
-   function greet(){
-    console.log("inside the greet 2")
-   }
-   greet();
+// function greet2(){
+//    function greet(){
+//     console.log("inside the greet 2")
+//    }
+//    greet();
 
-}
+// }
 
-greet();
-greet2();
-
-
-
-
+// greet();
+// greet2();
 
 // hello world, inside the greet 2
 // ============================ 2 ====================
@@ -58,18 +54,18 @@ greet2();
 
 // ============================ 4 ==============================
 
-// function outer(a){
-//     let b=5;
+function outer(a){
+    let b=5;
 
-//     function inner(b){
-//         console.log(a);  // 20 
-//         console.log(b); // 10
-//     }
+    function inner(b){
+        console.log(a);  // 20 
+        console.log(b); // 10
+    }
 
-//     inner(10)
-// }
+    inner(10)
+}
 
-// outer(20);
+outer(20);
 
 
 
