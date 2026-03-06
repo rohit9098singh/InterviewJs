@@ -7,10 +7,10 @@
 // console.log("5" * 2);
 // //Explanation: Both strings coerced to numbers and multiplied.
 
-// console.log("5" / "2");
+console.log("5" / 2);
 // // same as aobve multiply works
 
-// console.log("5" + true);
+console.log("5" + true);
 // //true converted to string "true", concatenated.
 
 // console.log("5" - true);

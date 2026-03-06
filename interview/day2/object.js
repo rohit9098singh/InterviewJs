@@ -7,7 +7,6 @@ let obj = { a: undefined };
 console.log(obj.hasOwnProperty("a"));
 
 
-
-
+console.log(Object.prototype.toString())
 
 

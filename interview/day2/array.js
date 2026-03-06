@@ -30,9 +30,12 @@ console.log(JSON.stringify([1, 2]) == JSON.stringify([1, 2]));  // true
 // Output: 4
 
 
-// let arr = [1, 2, 3];
-// console.log(arr.slice(1, 2));
-// console.log("slice value is what at here jsut check it out here ",arr)
+let arr2 = [1, 2, 3];
+console.log(arr2.slice(1, 2));
+
+// arr2.splice(2,1,6,4,5)
+// console.log("cpliced value",arr2)
+console.log("slice value is what at here jsut check it out here ",arr2)
 
 // splice() nikale gaye elements ka array return karta hai.
 // let arr = [1, 2, 3];

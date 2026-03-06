@@ -1,13 +1,13 @@
-// console.log(rohit());
+console.log(rohit());
 
-// var rohit=function(){
-//     return "hello world";
-// }
+var rohit=function(){
+    return "hello world";
+}
 
-// function rohit(){
-//     return "hello from fucntion below "
-// }
-// console.log("check it ",rohit())
+function rohit(){
+    return "hello from fucntion below "
+}
+console.log("check it ",rohit())
 
 // output => hello from fucntion inside 
 

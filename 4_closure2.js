@@ -30,7 +30,7 @@ function createBankAccount(initialBalance) {
   myAccount.withdraw(200);      // Withdrew ₹200. New Balance: ₹1300
   console.log(myAccount.getBalance()); // 1300
 
-  console.log(myAccount.balance); //  undefined — private data
+  console.log(myAccount.balance); //
 
 
 

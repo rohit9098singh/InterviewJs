@@ -6,6 +6,7 @@ const uniqueValue=[...new Set(numbers)];
 console.log(uniqueValue)
 
 
+
 // filter and indexof
 
 const nextUnique=numbers.filter((value,index,self)=>{

@@ -8,20 +8,20 @@
 // Just like they remember the variables, inner functions can also access outer functions
 //  (if they're defined as variables or function declarations).
 
-function outer() {
-    function greet() {
-        return "Hello";
-    }
+// function outer() {
+//     function greet() {
+//         return "Hello";
+//     }
 
-    function inner() {
-        console.log(greet()); // Accessing outer function
-    }
+//     function inner() {
+//         console.log(greet()); // Accessing outer function
+//     }
 
-    return inner;
-}
+//     return inner;
+// }
 
-const sayHello = outer();
-sayHello(); // Hello
+// const sayHello = outer();
+// sayHello(); 
 
 
 
@@ -45,31 +45,29 @@ sayHello(); // Hello
 //     let a =10;
 //     return {
 //         hello:function (){
-//             console.log("hello world")
+//              console.log("hello world")
 //         }
 //     }
 // }
 
 // const yes=x();
-// console.log(yes.hello())  // helo world and undefined 
-
-// yes.hello => to hello world print kar deta hai but vo return kuch nhi karta hai isliye usko undedined milta hai
+// console.log(yes.hello())  // udefined hello world  
 
  
 
 
-// function x() {
-//     let a = 10;
-//     return {
-//         hello: function (amount) {
-//             return` hello world ${amount}`;  //  returning the string instead of logging it
-//         }
-//     }
-// }
+function x() {
+    let a = 10;
+    return {
+        hello: function (amount) {
+            return` hello world ${amount}`;  //  returning the string instead of logging it
+        }
+    }
+}
 
-// const yes = x();
-// console.log(yes.hello(20));  // prints: hello world
-// console.log(yes.a)  // undefined
+const yes = x();
+console.log(yes.hello(20));  
+console.log(yes.a)
 
 
 // ==============================  use this example to explain ===============================
@@ -101,8 +99,9 @@ sayHello(); // Hello
 // }
 
 // var z=x();
-// console.log(z)
-// z() 
+// console.log(z) // undefined 
+// z() // 1000
+
 
 function z() {
     var b = 1000;
@@ -111,7 +110,7 @@ function z() {
         var a = 7;
 
         function y() {
-            console.log("i guess the value of a has been modified at here",a, b); // Accesses both a and b via closure
+            console.log("i guess the value of a has been modified at here",a, b); 
         }
         a = 2000;
         y();
@@ -123,17 +122,17 @@ function z() {
 
 z();
 
-var c = z();    // c now holds function y?
+var c = z();   
 console.log("what about this c value at here ",c); 
-// c();  
-            //  Calls y() — prints
+c();   //  type error aaya kyu aaya 
+           
 
-// function outer(){
-//     let a=10;
-//     return function(){
-//         console.log(a)
-//     }
-// }
+function outer(){
+    let a=10;
+    return function(){
+        console.log(a)
+    }
+}
 
-// const ref=outer();
-// ref();
+const ref=outer();
+ref();

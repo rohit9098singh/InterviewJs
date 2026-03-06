@@ -1,11 +1,14 @@
-// function x(){
-//     for(var i=1;i<=5;i++){
-//         setTimeout(()=>{
-//             console.log(i)
-//         },i*1000)
-//     }
-//     console.log("hello rohit")
-// }
+function x(){
+    for(let i=1;i<=5;i++){ // 
+        setTimeout((i)=>{    // 
+            console.log(i)
+        },i*1000,i)
+    }
+    console.log("hello rohit")
+}
+
+x()
+// 1,2,3,4,5  
 
 // function x(){
 //   for (var index = 0; index <5; index++) {
@@ -17,6 +20,8 @@
 //   }
 // }
 // x(); 
+
+
 
 // hello rohit 6 6 6 6 6 6 behave this way because closuere remeber the reference of i not the value of i
 
@@ -62,23 +67,23 @@
 // }
 // x()
 
-function outest(){
-    function outerFunction(params){
-        let x=10;
-        function innerFunction(){
-           console.log(x,params)
-        }
-        return innerFunction;
-    }
-    return outerFunction;
-}
+// function outest(){
+//     function outerFunction(params){
+//         let x=10;
+//         function innerFunction(){
+//            console.log(x,params)
+//         }
+//         return innerFunction;
+//     }
+//     return outerFunction;
+// }
 
-const calling =outest();
+// const calling =outest();
 
-const result=calling("hello");
+// const result=calling("hello");
 
-result();
-outest()("hello")();
+// result();
+// outest()("hello")();
 
 // function x() {
 //   for (let i = 0; i < 5; i++) {
