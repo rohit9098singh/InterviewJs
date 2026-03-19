@@ -1,13 +1,13 @@
-console.log(rohit());
+// console.log(rohit());
 
-var rohit=function(){
-    return "hello world";
-}
+// var rohit=function(){
+//     return "hello world";
+// }
 
-function rohit(){
-    return "hello from fucntion below "
-}
-console.log("check it ",rohit())
+// function rohit(){
+//     return "hello from fucntion below "
+// }
+// console.log("check it ",rohit())
 
 // output => hello from fucntion inside 
 
@@ -21,28 +21,32 @@ console.log("check it ",rohit())
 
 // ==================================  3  ============================
 
-// var x=3;
+var x=3;
 
-// var fun=function(){
-//     console.log(x);
-//     var x=20;
-// }
+var fun=function(){ 
+    console.log(x);
+    var x=20;
+    if(true){
+        let  x=40
+    }
+    console.log(x)
+}
 
-// fun();
+fun();
 
 // output => undefined ;
 
 
 // ================================== 4 ============================
 
-// var a =1;
+var a =1;
 
-// function test(){
-//   console.log("check it",a);
-//   var a =2;
-// }
+function test(){
+  console.log("check it",a);
+  var a =2;
+}
 
-// test();
+test();
 
 // undefined still 
 
@@ -56,6 +60,5 @@ function outer(){
 
 outer();
 
-// output => inner 
 
 
