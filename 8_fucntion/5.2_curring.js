@@ -15,28 +15,35 @@
 // }
 
 
-// console.log(multiply(2)(3)(4)); // 24
 
+// with named fuction
+var x = function test() {
+  console.log(typeof test);
+};
 
-// var x = function test() {
-//   console.log(typeof test);
-// };
+x();
+console.log(typeof test);  // fucntion ,undefined
 
-// x();
-// console.log("ye diya fucntion na",typeof test);
-
-
- function test() { 
+// with normal fucntion 
+function test() { 
   console.log(typeof test);
 };
 
 test();
-console.log("ye diya fucntion na",typeof test);
+console.log(typeof test); // fucntion , function
 
+// with arrow fucntion
+var x = () => {
+  console.log(typeof x);
+};
 
-const hello=()=>{
-  console.log(typeof test)
-}
+x();
+console.log(typeof x); // function , function
 
-hello()
-console.log("ye diya fucntion ",typeof hello)
+// console.log(typeof b);
+// const b = 20;  // Reference Error
+
+console.log(typeof c);
+var c = 30; // undefined
+
+// most tricky part 
