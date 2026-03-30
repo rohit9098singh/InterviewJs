@@ -18,6 +18,7 @@ console.log(arr2.find(x => x === NaN));  // this becoems undefined because nan i
 
 console.log("yaha pe kya aay ",arr2.find(x => Number.isNaN(x))) // NAN
 
+console.log("yaha twist return kya hai ",Number.isNaN(NaN))
 
 
 const obj1 = { id: 1 };
@@ -26,7 +27,7 @@ const obj3 = { id: 3 };
 
 const arr = [obj1, obj2, obj3];
 
-// const result2 = arr.find(item => item === { id: 2 });
+const result2 = arr.find(item => item === { id: 2 });
 
 console.log("is this what i am checking",result2);
 

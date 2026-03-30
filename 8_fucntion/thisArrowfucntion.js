@@ -1,6 +1,13 @@
 // 1st point => normal fucntion jo hai uska this call time pe na ke definitaion time pe
 // 2nd pont=> arrow functuin khud ka this nhi hota islie vo creation time pe parent se inherit kar leta hai 
 
+// - In global scope (browser), this refers to window (except in modules).
+// - In a regular function:
+//   - Non-strict → this = window
+//   - Strict → this = undefined
+// - In an object method, this refers to the object calling the method.
+// - Arrow functions do not have their own this; they inherit it from the surrounding scope.
+
 const obj1 = {
   name: 'Rohit',
   greet: function() {
