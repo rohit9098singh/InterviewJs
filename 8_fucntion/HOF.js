@@ -36,3 +36,4 @@ console.log(newArr); // [2, 4, 6]
 
 
 
+

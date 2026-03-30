@@ -27,6 +27,7 @@ async function handlePromise(){
   console.log(res3);
   // even it it had two await it will wait paralley and get resolve nearly at the same time 
 }
+
 handlePromise();
 
 

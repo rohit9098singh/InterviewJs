@@ -1,24 +1,11 @@
-// const animal={
-//     makeSound(){
-//         console.log(`${this.name} makes a sound`)
-//     }
-// }
+// (function () {
+//   var a = b = 5;
+// })();
 
-// const dog=Object.create(animal)
+// b = 5;       // ❗ global ban gaya
+// var a = 5;   // ❗ sirf IIFE ke andar
 
-// dog.name="rohit",
-// dog.bark=function(){
-//     console.log(`${this.name} barks`)
-// }
+var a =b=6
 
-// dog.makeSound();
-// dog.bark();
-
-
-var x = function test() {
-  console.log(typeof test);
-};
-
-x();
-console.log(typeof test);
-
+console.log(b);
+console.log(a);

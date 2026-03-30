@@ -52,7 +52,8 @@ function start(){
 }
 start()
 
-// fix 
+// ✅ Fix 1 (Best & simplest)
+// 👉 Message ko inside callback compute karo
 
 // function end(){
 //   let count=0
@@ -62,6 +63,21 @@ start()
 
 //     count=5;
 // }
+
+// ✅ Fix 3 (Force latest value using function)
+function start(){
+    let count = 0;
+
+    function getMessage() {
+      return `Count is ${count}`;
+    }
+
+    setTimeout(() => {
+      console.log(getMessage());
+    }, 3000);
+
+    count = 5;
+}
 
 
 function setp1(callBack){

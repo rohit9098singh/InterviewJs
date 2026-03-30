@@ -94,9 +94,15 @@ Explain difference with example.
 ### 7️⃣ Currying
 
 Write:
-
-```js
-sum(1)(2)(3) // 6
+```
+function base(val1){
+  return child(val2){
+     return child3(val3){
+      return val1+val2+val3
+     }
+  }
+}
+sum(1)(2)(3) 
 ```
 
 Then answer:
