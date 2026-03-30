@@ -15,7 +15,6 @@
 //   // setTimeout(()=>{reject("p3 fail")},2000)
 // });
 
-
 Promise.all([p1, p2, p3])
   .then((result) => {
     console.log(result);

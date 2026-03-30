@@ -16,4 +16,3 @@ obj.increment();
 // this.count++ // becomes NaN (undefined incremented)
 
 // note : how to solve it just change the normal function into the arrow function
-

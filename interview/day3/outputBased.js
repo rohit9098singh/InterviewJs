@@ -26,18 +26,18 @@
 // clearInterval(id)
 // },2000)
 
-// function getName1(){
-// console.log(this.name);
-// }
-// Object.prototype.getName2 = () =>{
-// console.log(this.name)
-// }
-// let personObj = {
-// name:"Tony",
-// print:getName1
-// }
-// personObj.print();
-// personObj.getName2();
+function getName1(){
+console.log(this.name);
+}
+Object.prototype.getName2 = () =>{
+console.log(this.name)
+}
+let personObj = {
+name:"Tony",
+print:getName1
+}
+personObj.print();
+personObj.getName2();
 
 function getName1(){
 console.log(this.name);
@@ -45,11 +45,11 @@ console.log(this.name);
 Object.prototype.getName2 = () =>{
  console.log(Object.getPrototypeOf(this).name);
 }
-let personObj = {
+let personObj2 = {
 name:"Tony",
 print:getName1
 }
-personObj.print();
+personObj2.print();
 Object.prototype.name="Steve";
 
 // function test() {

@@ -22,6 +22,7 @@
 //   })
 //   .catch((e) => {
 //     console.log("Caught 2");
+//     console.log(e)
 //   });
 //================================================
 
@@ -32,13 +33,13 @@
 
 //================================================
 
-async function go() {
-  console.log("Start");
-  await new Promise((res) => setTimeout(res, 0));
-  console.log("After timeout");
-}
-go();
-console.log("Outside");
+// async function go() {
+//   console.log("Start");
+//   await new Promise((res) => setTimeout(res, 0));
+//   console.log("After timeout");
+// }
+// go();
+// console.log("Outside");
 
 //===============================================
 // Promise.resolve("Start")
@@ -50,10 +51,10 @@ console.log("Outside");
 
 //==============================================
 // Promise.resolve("done")
-//   .finally(() => "ignored")
+//   .finally(() => console.log("first"))
 //   .then(console.log);
 
-//   .finally() is meant for cleanup.
+  // .finally() is meant for cleanup.
 // The return value of finally is ignored. It does not affect the promise chain's value.
 
 //==============================================
@@ -65,11 +66,11 @@ console.log("Outside");
 // After 1 second: rejected with reason "timeout"
 
 //============================================
-// Promise.resolve()
-//   .then(async () => {
-//     return 5;
-//   })
-//   .then(console.log);
+Promise.resolve()
+  .then(async () => {
+    return 5;
+  })
+  .then(console.log);
 //============================================
 
   // Promise.resolve(10)
@@ -80,14 +81,14 @@ console.log("Outside");
 
 //============================================
 
-// async function test() {
-//   try {
-//     await Promise.reject("Fail");
-//   } catch (e) {
-//     console.log("Caught:", e);
-//   }
-// }
-// test();
+async function test() {
+  try {
+    await Promise.reject("Fail");
+  } catch (e) {
+    console.log("Caught:", e);
+  }
+}
+test();
 
 
 //============================================
